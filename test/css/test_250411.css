@@ -137,7 +137,7 @@ a {
 }
 .btn .btn_wrap a {
     color: #fff;
-    display: block /* a에 항상 주기 */
+    display: block; /* a에 항상 주기 */
     padding: 27px 8px 24px 9px;
 }
 .btn .btn_wrap a.all {
