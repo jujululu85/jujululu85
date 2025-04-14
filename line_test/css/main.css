@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'PT';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url(../font/Pretendard-Regular.woff2) format('woff2'), url(../font/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+	font-family: 'PT';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url(../font/Pretendard-Bold.woff2) format('woff2'), url(../font/Pretendard-Bold.woff) format('woff');
+}
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555555;
+    word-break: keep-all;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+.line h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1d1d;
+    line-height: 1.5;
+    margin: 111px 0 0 0;
+}
+.line h2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #00b900;
+    line-height: 1.5;
+    margin: 28px 0 0 0;
+}
+.line p {
+    margin: 15px 0 0 0;
+}
+.line .list {
+    margin: 30px 0 0 0;
+}
+ .line ul li {
+    width: 36px;
+ }
+ .line .list ul li h3 {
+    font-size:  17px;
+    font-weight: 400;
+    height: 365px;
+    color: #00b900;
+    border-radius: 20px;
+    padding: 29px 0 9px 0;
+}
+.btn {
+    margin: 230px 0 0 0;
+}
+.btn .btn_wrap {
+    margin: 22px 0 0 0;
+    display: flex;
+    gap: 11px;
+}
+.btn .btn_wrap a {
+    color: #00b900;
+    display: block;
+    padding: 27px 8px 24px 9px;
+}
+.line2 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1d1d1d;
+    line-height: 1.5;
+    margin: 111px 0 0 0;
+}
