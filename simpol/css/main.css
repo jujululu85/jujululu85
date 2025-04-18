@@ -249,8 +249,10 @@ footer .copyright {
 }
 .wrapper {
     width: 1260px;
-    margin: 0 auto;
+    margin: 0 auto; /* 브라우저에 가운데 정렬*/
 }
-#wrap {
-    min-width: 1320px
+#wrap { /* 홈페이지 전체를 감싸는 요소 */
+    min-width: 1320px;
+    /* wrapper의 사이즈 + 좌우레 줄 최소여백 (가로스크롤바가
+    1260 + 30 + 30 = 1320px*/
 }
