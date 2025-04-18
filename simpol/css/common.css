@@ -14,3 +14,6 @@ body {
     width: 1260px; /* 내 디자인 파일 레이아웃 가이드 넓이 */
     margin: 0 auto; /* 브라우저에 가운데 정렬 */
 }
+#wrap {
+    min-width: 1320px;
+}
