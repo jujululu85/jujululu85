@@ -389,6 +389,82 @@ header .tnb a.icon03::before {
     backdrop-filter: blur(10px);
     padding: 31px 33px 0 33px;
     /* 높이로 제한하고 있기 때문에 하단 여백 안줌 */
+    position: relative; /* more 정렬의 기준 */
+}
+.community .inner .notice:hover {
+    background-color: #0B3876;
+}
+.community .inner .notice h3 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.community .inner .notice .list {
+    margin: 26px 0 0 0;
+}
+.community .inner .notice .list ul li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.community .inner .notice .list ul li:first-child {
+    border-top: 0;
+}
+.community .inner .notice .list ul li a {
+    display: flex; /* strong span를 좌우로 배치 */
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+.community .inner .notice .list ul li a strong {
+    width: calc(100% - 90px);
+    /* 100%에서
+       옆에 날짜 넓이 + 둘사이여백을 뺌 */
+
+    /* 1줄 제함 */
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+}
+.community .inner .notice .list ul li a:hover strong {
+    font-weight: 800;
+}
+.community .inner .notice .list ul li a span {
+    width: 80px;
+    /* 날짜는 자리수가 늘지 않음
+       25-1-1 이렇게 표시하면 자릿수가 변동됨
+       그래서 날짜 표기는 25-01-01 이렇게 표시 - 자릿수를 변동시키지 않기 위해
+       제일 넓은 숫자를 기준으로 최대 넓이를 고정값으로 줌 */
+       font-size: 15px;
+       color: rgba(255,255,255,0.8);
+       text-align: center;
+}
+.community .inner .notice .more {
+    position: absolute; /* notice를 기준으로 정렬 */
+    right: 33px;
+    top: 45px;
+    padding: 0 25px 0 0; /* 아이콘을 배치할 영역까지 more로 잡혀야함 */
+    color: rgba(255,255,255,0.8);
+}
+.community .inner .notice .more::after {
+    content: ""; /* 필수 */
+    position: absolute; /* more를 기준으로 정렬*/
+    right: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_51_580' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_51_580)'%3E%3Cpath d='M9.16675 10.8337H5.00008C4.76397 10.8337 4.56605 10.7538 4.40633 10.5941C4.24661 10.4344 4.16675 10.2364 4.16675 10.0003C4.16675 9.76421 4.24661 9.5663 4.40633 9.40658C4.56605 9.24685 4.76397 9.16699 5.00008 9.16699H9.16675V5.00033C9.16675 4.76421 9.24661 4.5663 9.40633 4.40658C9.56605 4.24685 9.76397 4.16699 10.0001 4.16699C10.2362 4.16699 10.4341 4.24685 10.5938 4.40658C10.7536 4.5663 10.8334 4.76421 10.8334 5.00033V9.16699H15.0001C15.2362 9.16699 15.4341 9.24685 15.5938 9.40658C15.7536 9.5663 15.8334 9.76421 15.8334 10.0003C15.8334 10.2364 15.7536 10.4344 15.5938 10.5941C15.4341 10.7538 15.2362 10.8337 15.0001 10.8337H10.8334V15.0003C10.8334 15.2364 10.7536 15.4344 10.5938 15.5941C10.4341 15.7538 10.2362 15.8337 10.0001 15.8337C9.76397 15.8337 9.56605 15.7538 9.40633 15.5941C9.24661 15.4344 9.16675 15.2364 9.16675 15.0003V10.8337Z' fill='white' fill-opacity='0.8'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.community .inner .notice .more:hover {
+    font-weight: 800;    
+}
+.community .inner .notice .more:hover::before {
+    content: "";
+    position: absolute; /* more를 기준으로 정렬 */
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 5px);
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
 }
 .community .inner .link {
     width: 404px;
@@ -409,13 +485,16 @@ header .tnb a.icon03::before {
     display: block;
     height: 189px;
     border-radius: 10px;
-    background-color: rgba(11,56,118,0.4);
+    background-color: rgba(11,56,118,0.6);
     backdrop-filter: blur(10px);
     padding: 33px 0 0 33px;
     font-size: 30px;
     font-weight: 800;
     line-height: 1.2;
     position: relative; /* after 정렬의 기준 */
+}
+.community .inner .link ul li a:hover {
+    background-color: #0B3876;
 }
 .community .inner .link ul li a::after {
     content: "";
@@ -442,5 +521,51 @@ header .tnb a.icon03::before {
 
 
 footer {
-    margin: 400px 0 0 0;
+    padding: 58px 0 52px 0;
+    background-color: #1D1D1D;
+}
+footer .f_nav ul {
+    display: flex;
+    gap: 50px;
+}
+footer .f_nav ul li {
+    position: relative; /* before 정렬의 기준 */
+}
+footer .f_nav ul li::before {
+    content: "";
+    position: absolute; /* li를 기준으로 정렬*/
+    left: -25px;
+    top: 7px;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+footer .f_nav ul li:first-child::before {
+    display: none; /* 숨김 */
+}
+footer .f_nav ul li a:hover {
+    text-decoration: underline;
+}
+footer .f_info {
+    margin: 41px 0 27px 0;
+    display: flex;
+    gap: 40px;
+}
+footer .f_info strong {
+    font-weight: 800;
+}
+footer .copyright p {
+    margin: 2px 0 0 0;
+    color: #666;
+}
+footer .copyright p strong {
+    font-weight: 800;
+}
+footer .copyright p strong::after {
+    content: "";
+    position: absolute; /* strong을 기준으로 정렬 */
+    bottom: -3px;
+    height: 1px;
+    width: 100%; 
+    background-color: #ccc;
 }
