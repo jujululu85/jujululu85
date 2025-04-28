@@ -129,10 +129,10 @@ header .tnb a.icon03::before {
 }
 @media screen and (max-width:1770px) {
     /* 브라이저의 넓이가 1770px 이하일때만 적용되는 css */
-    .visual .picture {
+}
+.visual .picture {
         transform: translate(0, 50%);
-    }  
-} 
+}
 
 .culture {
     margin: 205px 0 0 0;
@@ -387,6 +387,8 @@ header .tnb a.icon03::before {
     border-radius: 10px;
     background-color: rgba(11,56,118,0.4);
     backdrop-filter: blur(10px);
+    padding: 31px 33px 0 33px;
+    /* 높이로 제한하고 있기 때문에 하단 여백 안줌 */
 }
 .community .inner .link {
     width: 404px;
