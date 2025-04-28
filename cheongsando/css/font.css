@@ -4,7 +4,7 @@
 	font-family: "NSN";
 	font-weight: 400;
 	font-display: swap;
-	src: url("../font/NanumSquareNeoTTF-bRg.eot?#iefix") format("embedded-opentype"), 
+	src: url("../font/NanumSquareNeoTTF-bRg.eot") format("embedded-opentype"), 
          url(../font/NanumSquareNeoTTF-bRg.woff2) format("woff2"), 
          url(../font/NanumSquareNeoTTF-bRg.woff) format("woff");
 }
@@ -12,7 +12,7 @@ font-face {
 	font-family: "NSN";
 	font-weight: 800;
 	font-display: swap;
-	src: url("../font/NanumSquareNeoTTF-dEb.eot?#iefix") format("embedded-opentype"), 
+	src: url("../font/NanumSquareNeoTTF-dEb.eot") format("embedded-opentype"), 
          url(../font/NanumSquareNeoTTF-dEb.woff2) format("woff2"), 
          url(../font/NanumSquareNeoTTF-dEb.woff) format("woff");
 }
