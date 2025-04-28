@@ -8,7 +8,7 @@
          url(../font/NanumSquareNeoTTF-bRg.woff2) format("woff2"), 
          url(../font/NanumSquareNeoTTF-bRg.woff) format("woff");
 }
-font-face {
+@font-face {
 	font-family: "NSN";
 	font-weight: 800;
 	font-display: swap;
