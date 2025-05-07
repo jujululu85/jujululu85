@@ -17,8 +17,7 @@ body {
         1260 + 24 + 24 = 1308 (동양생명) 최소넓이
         1260 + 30 + 30 = 1320 (네이버)
     */
-    position: relative; /* header 정렬의 기준 */
-    
+    position: relative; /* header 정렬의 기준 */    
 }
 @media screen and (max-width:640px) {
                 /* 브라우저 넓이가 640px 이하에서만 작동 */
