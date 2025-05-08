@@ -234,6 +234,8 @@ header .tnb .lang {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+
 @media screen and (max-width:641px) {
             /******************* 오버했을때 641px 이상(포함)에서만 작동 *******************/
 
