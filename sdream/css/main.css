@@ -592,10 +592,10 @@ header .tnb .lang {
 
 @media screen and (min-width:641px){
     /******************** 오버효과 ***********************/
-                .webzine .list ul li a:hover .photo img {
+                .webzine .list ul li:hover a .photo img {
                     transform: scale3d(1.2, 1.2, 1)
                 }
-                .webzine .list ul li a:hover {
+                .webzine .list ul li:hover a {
                     transform: translate(0, -10px);
                     box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
                     /* 그림자가 이상하게 들어가면 list - padding 아랫값을 주고
@@ -761,6 +761,7 @@ header .tnb .lang {
                     padding: 21px 54px 22px 21px;
                     font-weight: 500;
                     font-size: 16px;
+                    border: 0;
                 }
                 .service .list ul li a::after {
                     right: 20px;
