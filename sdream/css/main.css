@@ -397,8 +397,7 @@ header .tnb .lang {
                     color: #fff
                 }                
                 .news .more:hover {
-                    border-color: #033E8A;
-                    background-color: #033E8A;
+                    border-color: #033E8A;                    
                     color: #fff;
                 }
                 .news .more:hover::after {                    
