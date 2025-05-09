@@ -704,7 +704,7 @@ header .tnb .lang {
     line-height: 1.2;
     letter-spacing: -0.05em;
     color: #1d1d1d;
-    border: 1px solid #536E83;
+    border: 1px solid #536E83;    
     position: relative; /* after 정렬의 기준 */
     transition: transform 0.5s, box-shadow 0.5s;
 }
@@ -761,6 +761,7 @@ header .tnb .lang {
                     font-weight: 500;
                     font-size: 16px;
                     border: 0;
+                    background-color: #DDE6ED;
                 }
                 .service .list ul li a::after {
                     right: 20px;
