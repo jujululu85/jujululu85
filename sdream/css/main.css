@@ -770,7 +770,7 @@ header .tnb .lang {
                     /* 기준이 되는 a 높이의 위아래 가운데 */
                     width: 25px;
                     height: 25px;
-                    background-size: 8px;
+                    background-size: 10px;
                 }
 }
 footer {
