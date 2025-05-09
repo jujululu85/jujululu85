@@ -697,7 +697,6 @@ header .tnb .lang {
 }
 .service .list ul li a {
     display: block;
-    border: 1px solid #536E83;
     padding: 32px 0 31px 35px;
     font-family: 'Gmarket Sans';
     font-weight: 700;
@@ -705,6 +704,7 @@ header .tnb .lang {
     line-height: 1.2;
     letter-spacing: -0.05em;
     color: #1d1d1d;
+    border: 1px solid #536E83;
     background-color: #DDE6ED;
     position: relative; /* after 정렬의 기준 */
     transition: transform 0.5s, box-shadow 0.5s;
@@ -721,9 +721,10 @@ header .tnb .lang {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_161_4' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_161_4)'%3E%3Cpath d='M14 18L12.6 16.55L16.15 13H3.99997V11H16.15L12.6 7.45L14 6L20 12L14 18Z' fill='%23033E8A'/%3E%3C/g%3E%3C/svg%3E%0A");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 11px;
+    background-size: 16px;
 }
 @media screen and (min-width:641px){
+    /************ 오버스타일 pc에서만 **********/
                 .service .list ul li:hover a {
                     background-color: #033E8A;
                     color: #fff;
