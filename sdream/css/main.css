@@ -705,7 +705,6 @@ header .tnb .lang {
     letter-spacing: -0.05em;
     color: #1d1d1d;
     border: 1px solid #536E83;
-    background-color: #DDE6ED;
     position: relative; /* after 정렬의 기준 */
     transition: transform 0.5s, box-shadow 0.5s;
 }
