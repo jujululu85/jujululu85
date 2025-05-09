@@ -718,7 +718,7 @@ header .tnb .lang {
     height: 32px;
     border: 1px solid #033E8A;
     border-radius: 50%; /* 동그라미 */
-    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_161_9' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='21' height='20'%3E%3Crect x='0.693115' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_161_9)'%3E%3Cpath d='M12.3598 15L11.1931 13.7917L14.1514 10.8333H4.02643V9.16667H14.1514L11.1931 6.20833L12.3598 5L17.3598 10L12.3598 15Z' fill='%23033E8A'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_161_4' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_161_4)'%3E%3Cpath d='M14 18L12.6 16.55L16.15 13H3.99997V11H16.15L12.6 7.45L14 6L20 12L14 18Z' fill='%23033E8A'/%3E%3C/g%3E%3C/svg%3E%0A");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 11px;
@@ -732,7 +732,7 @@ header .tnb .lang {
                 }
                 .service .list ul li:hover a::after {
                     border-color: #fff;
-                    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_34_1362' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='21' height='20'%3E%3Crect x='0.693115' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_34_1362)'%3E%3Cpath d='M12.3599 15L11.1933 13.7917L14.1516 10.8333H4.02661V9.16667H14.1516L11.1933 6.20833L12.3599 5L17.3599 10L12.3599 15Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+                    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_34_1362' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_34_1362)'%3E%3Cpath d='M14.0002 18L12.6002 16.55L16.1502 13H4.00024V11H16.1502L12.6002 7.45L14.0002 6L20.0002 12L14.0002 18Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
                 }
 }
 @media screen and (max-width:640px){ /* 모바일 */
