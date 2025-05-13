@@ -113,7 +113,7 @@ header .tnb .search {
 }/*@media*/
 
 .book {
-    margin: 135px 0 0 0;
+    margin: 130px 0 0 0;
 }
 .book .book_wrap {
     width: calc(50% + 630px); /* 1260px - 50% = 630px */
@@ -122,12 +122,39 @@ header .tnb .search {
     display: flex; /* tit, list 좌우 배치 */
     justify-content: space-between;
 }
-.book .book_wrap .tit {
-    
+.book .book_wrap .tit h2 {
+    font-size: 40px;
+    color: #2d2d2d;
+    margin: 5px 0 20px 0
 }
 .book .book_wrap .list {
     width: calc(100% - 242px);
     /* book_wrap의 넓이를 100%로 하고 왼쪽 tit의 넓이를 빼기 */
+    overflow-x: hidden;
+}
+.book .book_wrap .list ul {
+    display: flex; /* li를 좌우로 */
+    gap: 24px;
+    width: 1918px;
+    /*
+        li의 넓이 * li의 갯수 = 250*7 = 1750
+        사이 여백 * li의 갯수 = 24*7 =168
+        1750 + 144 = 1918
+    */
+}
+.book .book_wrap .list ul li {
+    width: 250px;
+}
+.book .book_wrap .list ul li a {
+    display: block;
+}
+.book .book_wrap .list ul li a .photo {
+   
+}
+.book .book_wrap .list ul li a .photo img {
+    width: 100%; 
+    /* 높이는 비율에 맞게 알아서 들어감 
+        - 책은 이미지 전체가 나와야 하기 때문에 object-fit 안줌 */
 }
 
 
