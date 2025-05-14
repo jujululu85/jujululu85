@@ -432,9 +432,9 @@ header .tnb a.icon03::before {
        25-1-1 이렇게 표시하면 자릿수가 변동됨
        그래서 날짜 표기는 25-01-01 이렇게 표시 - 자릿수를 변동시키지 않기 위해
        제일 넓은 숫자를 기준으로 최대 넓이를 고정값으로 줌 */
-       font-size: 15px;
-       color: rgba(255,255,255,0.8);
-       text-align: center;
+    font-size: 15px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
 }
 .community .inner .notice .more {
     position: absolute; /* notice를 기준으로 정렬 */
