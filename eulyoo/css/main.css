@@ -176,7 +176,7 @@ header .tnb .search {
     text-overflow: ellipsis;
     /* 2줄제한 
     line-height: 1.5;
-    height: 3em; 
+    height: 3em; (행간 * 줄수 ( 단위는 em))
     overflow: hidden;
     */
 }
@@ -338,7 +338,7 @@ header .tnb .search {
     border-radius: 40px 0 40px 0;
 }
 .interview .list ul li:nth-child(2) a .photo {
-    /* 디자인이 무조건 두번재 요소는 스타일이 다름 */
+    /* 디자인이 무조건 두번째 요소는 스타일이 다름 */
     border-radius: 0 40px 0px 40px;
 }
 .interview .list ul li a .photo::before {
@@ -425,14 +425,14 @@ header .tnb .search {
 .interview .list ul li a .txt_over span {
     display: inline-block;
     margin: 11px 0 0 0;
-    padding: 0 20px 0 0 ;
+    padding: 0 30px 0 0 ;
     color: rgba(255, 255, 255, 0.8);
     position: relative; /* after 정렬의 기준 */
 }
 .interview .list ul li a .txt_over span::after {
     content: "";
     position: absolute; /* span태그를 기준으로 정렬 */
-    right: -35px;
+    right: -15px;
     top: 3px;
     width: 20px;
     height: 20px;
@@ -446,25 +446,25 @@ header .tnb .search {
 
 @media screen and (min-width:641px) {
     /*********** over 했을때 ***********/
-                .interview .list ul li a:hover .photo::before {
-                    display: none;
-                }
-                .interview .list ul li a:hover .photo img {
-                    filter: grayscale(0);
-                }
-                .interview .list ul li a:hover .txt {
-                    opacity: 0;
-                }
-                .interview .list ul li a:hover .txt_over {
-                    opacity: 1;
-                    bottom: -50px;
-                }
+    .interview .list ul li a:hover .photo::before {
+        opacity: 0;
+    }
+    .interview .list ul li a:hover .photo img {
+        filter: grayscale(0);
+    }
+    .interview .list ul li a:hover .txt {
+        opacity: 0;
+    }
+    .interview .list ul li a:hover .txt_over {
+        opacity: 1;
+        bottom: -51px;
+    }
 }/*@media*/
 @media screen and (max-width:640px) {
                 .interview {
                     background-color: #E2E3DD;
                     margin: 80px 0 0 0;
-                    padding: 50px 0 102px 0
+                    padding: 90px 0 254px 0
                 }
                 .interview .wrapper {
                     position: relative; /* more 정렬의 기준 */
@@ -496,10 +496,6 @@ header .tnb .search {
                     height: 384px;
                     border-radius: 20px 0 20px 0;
                 }
-                .interview .list ul li:nth-child(2) a .photo {
-                    /* 디자인이 무조건 두번재 요소는 스타일이 다름 */
-                    border-radius: 0 40px 0px 40px;
-                }
                 .interview .list ul li a .photo::before {
                     display: none;
                 }
@@ -525,11 +521,11 @@ header .tnb .search {
                     position: absolute;
                     right: 0;
                     top: 5px;
-                    width: 23px;
-                    height: 23px;
+                    width: 26px;
+                    height: 26px;
                     border-radius: 40%;
                     background-color: #E2E3DD;
-                    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.54168 8.45768H1.75001C1.47848 8.45768 1.25088 8.36584 1.0672 8.18216C0.883518 7.99848 0.791677 7.77088 0.791677 7.49935C0.791677 7.22782 0.883518 7.00022 1.0672 6.81654C1.25088 6.63286 1.47848 6.54102 1.75001 6.54102H6.54168V1.74935C6.54168 1.47782 6.63352 1.25022 6.8172 1.06654C7.00088 0.882856 7.22848 0.791016 7.50001 0.791016C7.77154 0.791016 7.99914 0.882856 8.18282 1.06654C8.3665 1.25022 8.45834 1.47782 8.45834 1.74935V6.54102H13.25C13.5215 6.54102 13.7491 6.63286 13.9328 6.81654C14.1165 7.00022 14.2083 7.22782 14.2083 7.49935C14.2083 7.77088 14.1165 7.99848 13.9328 8.18216C13.7491 8.36584 13.5215 8.45768 13.25 8.45768H8.45834V13.2493C8.45834 13.5209 8.3665 13.7485 8.18282 13.9322C7.99914 14.1158 7.77154 14.2077 7.50001 14.2077C7.22848 14.2077 7.00088 14.1158 6.8172 13.9322C6.63352 13.7485 6.54168 13.5209 6.54168 13.2493V8.45768Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.91668 9.08366H1.50001C1.19307 9.08366 0.935776 8.97984 0.728137 8.7722C0.520498 8.56456 0.416678 8.30727 0.416678 8.00033C0.416678 7.69338 0.520498 7.43609 0.728137 7.22845C0.935776 7.02081 1.19307 6.91699 1.50001 6.91699H6.91668V1.50033C6.91668 1.19338 7.0205 0.936089 7.22814 0.728451C7.43578 0.520812 7.69307 0.416992 8.00001 0.416992C8.30696 0.416992 8.56425 0.520812 8.77189 0.728451C8.97953 0.936089 9.08334 1.19338 9.08334 1.50033V6.91699H14.5C14.807 6.91699 15.0642 7.02081 15.2719 7.22845C15.4795 7.43609 15.5833 7.69338 15.5833 8.00033C15.5833 8.30727 15.4795 8.56456 15.2719 8.7722C15.0642 8.97984 14.807 9.08366 14.5 9.08366H9.08334V14.5003C9.08334 14.8073 8.97953 15.0646 8.77189 15.2722C8.56425 15.4798 8.30696 15.5837 8.00001 15.5837C7.69307 15.5837 7.43578 15.4798 7.22814 15.2722C7.0205 15.0646 6.91668 14.8073 6.91668 14.5003V9.08366Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
                     background-repeat: no-repeat;
                     background-position: center center;
                 }
@@ -640,26 +636,26 @@ header .tnb .search {
 }
 @media screen and (min-width:641px){
     /****** over style *******/
-    .story .list ul li a:hover .photo img {
-        transform: scale3d(1.2, 1.2, 1);
-    }
-    .story .list ul li a .txt h3 span {
-        position: relative; /* after 정렬의 기준 */
-    }
-    .story .list ul li a .txt h3 span::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 0%;
-        height: 1px;
-        background-color: #9d9d9d;
-        opacity: 0.8;
-        transition: 0.5s;
-    }
-    .story .list ul li a:hover .txt h3 span::after {
-        width: 100%;
-    }
+                .story .list ul li a:hover .photo img {
+                    transform: scale3d(1.2, 1.2, 1);
+                }
+                .story .list ul li a .txt h3 span {
+                    position: relative; /* after 정렬의 기준 */
+                }
+                .story .list ul li a .txt h3 span::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0%;
+                    height: 1px;
+                    background-color: #9d9d9d;
+                    opacity: 0.8;
+                    transition: 0.5s;
+                }
+                .story .list ul li a:hover .txt h3 span::after {
+                    width: 100%;
+                }
 }/*@media*/
 @media screen and (max-width:640px){
     
