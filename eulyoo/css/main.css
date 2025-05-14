@@ -175,7 +175,9 @@ header .tnb .search {
     overflow: hidden;
     text-overflow: ellipsis;
     /* 2줄제한 
-    line
+    line-height: 1.5;
+    height: 3em; 
+    overflow: hidden;
     */
 }
 .book .book_wrap .list ul li a strong {
@@ -296,6 +298,372 @@ header .tnb .search {
             }
 }/*@media*/
 
+.interview {
+    background-color: #E2E3DD;
+    margin: 130px 0 0 0;
+    padding: 88px 0;
+}
+.interview .tit {
+    text-align: center;
+}
+.interview .tit h2 {
+    font-size: 40px;
+    color: #2d2d2d;
+    margin: 0 0 13px 0;
+}
+.interview .list {
+    margin: 48px 0 0 0;
+}
+.interview .list ul {
+    display: flex; /* li를 좌우로 */
+    justify-content: space-between;
+}
+.interview .list ul li {
+    width: calc(33.33% - 34px);
+    /* 100% 한줄에 나오는 li의 갯수 = 33.33
+        한줄에 여백의 합 / 한줄에 나오는 li의 갯수 = 102/3 = 34 */
+}
+.interview .list ul li:nth-child(2) {
+    /* 디자인이 무조건 두번재 요소는 스타일이 다름 */
+    margin: 45px 0 0 0;
+}
+.interview .list ul li a {
+    display: block;
+    position: relative; /* txt, txt_over 정렬의 기준 */
+}
+.interview .list ul li a .photo {
+    position: relative; /* befoer 정렬의 기준 */
+    overflow: hidden;
+    height: 447px;
+    border-radius: 40px 0 40px 0;
+}
+.interview .list ul li:nth-child(2) a .photo {
+    /* 디자인이 무조건 두번재 요소는 스타일이 다름 */
+    border-radius: 0 40px 0px 40px;
+}
+.interview .list ul li a .photo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10; 
+    /* 이미지보다 순서를 위로
+        z-index가 없는 것보다 있으면 무조건 위
+        z-index가 서로 있으면 높은 숫자가 위로 올라감
+        z-index값은 position값이 필요 */
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+    transition: 0.5s;
+}
+.interview .list ul li a .photo img {
+    filter: grayscale(1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.interview .list ul li a .txt {
+    position: absolute; /* a를 기준으로 정렬 */
+    left: 40px;
+    bottom: 30px;
+    z-index: 11;
+    /* z-index는 숫자가 높은게 위 */
+    width: calc(100% - 100px);
+    transition: 0.5s;
+}
+.interview .list ul li a .txt::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 14px;
+    width: 34px;
+    height: 34px;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 25.75C12.5986 25.75 12.2622 25.6142 11.9906 25.3427C11.7191 25.0712 11.5833 24.7347 11.5833 24.3333V14.4167H1.66667C1.26528 14.4167 0.928819 14.2809 0.657292 14.0094C0.385764 13.7378 0.25 13.4014 0.25 13C0.25 12.5986 0.385764 12.2622 0.657292 11.9906C0.928819 11.7191 1.26528 11.5833 1.66667 11.5833H11.5833V1.66667C11.5833 1.26528 11.7191 0.928819 11.9906 0.657292C12.2622 0.385764 12.5986 0.25 13 0.25C13.4014 0.25 13.7378 0.385764 14.0094 0.657292C14.2809 0.928819 14.4167 1.26528 14.4167 1.66667V11.5833H24.3333C24.7347 11.5833 25.0712 11.7191 25.3427 11.9906C25.6142 12.2622 25.75 12.5986 25.75 13C25.75 13.4014 25.6142 13.7378 25.3427 14.0094C25.0712 14.2809 24.7347 14.4167 24.3333 14.4167H14.4167V24.3333C14.4167 24.7347 14.2809 25.0712 14.0094 25.3427C13.7378 25.6142 13.4014 25.75 13 25.75Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.interview .list ul li a .txt strong {
+    color: #fff;
+    font-size: 30px;    
+}
+.interview .list ul li a .txt_over {
+    position: absolute; /* a를 기준으로 정렬 */
+    left: 0;
+    width: calc(100% - 30px);
+    bottom: -80px;
+    z-index: 12; /* z-index는 숫자가 높은게 위 */
+    background-color: #684025;
+    color: #fff;
+    padding: 28px 35px 21px 30px;
+    border-radius: 40px 0 40px 0;
+
+    opacity: 0;
+    /* 부드럽게 나타났다가 사라지는건 display:none으로 구현X
+        opacity 0 ->1로 변경
+        opacity는 공간을 차지함 ... 주의 */
+    transition: 0.5s;
+}
+.interview .list ul li:nth-child(2) a .txt_over {
+    border-radius: 0 40px 0 40px;
+}
+.interview .list ul li a .txt_over h3 {
+    font-size: 30px;
+    margin: 0 0 6px 0;
+}
+.interview .list ul li a .txt_over p {
+    /* 2줄로 제한 ---절대 padding 주면 안됨 */
+    line-height: 1.5;
+    height: 3em; /* 행간*줄수 (단위는 em) */
+    overflow: hidden;
+
+    /* 2줄 이상으로 제한할때 끝에 ... 추가하는 코드 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 줄수 */
+    -webkit-box-orient: vertical;
+}
+.interview .list ul li a .txt_over span {
+    display: inline-block;
+    margin: 11px 0 0 0;
+    padding: 0 20px 0 0 ;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative; /* after 정렬의 기준 */
+}
+.interview .list ul li a .txt_over span::after {
+    content: "";
+    position: absolute; /* span태그를 기준으로 정렬 */
+    right: -35px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 15.5C7.76389 15.5 7.56597 15.4201 7.40625 15.2604C7.24653 15.1007 7.16667 14.9028 7.16667 14.6667V8.83333H1.33333C1.09722 8.83333 0.899306 8.75347 0.739583 8.59375C0.579861 8.43403 0.5 8.23611 0.5 8C0.5 7.76389 0.579861 7.56597 0.739583 7.40625C0.899306 7.24653 1.09722 7.16667 1.33333 7.16667H7.16667V1.33333C7.16667 1.09722 7.24653 0.899306 7.40625 0.739583C7.56597 0.579861 7.76389 0.5 8 0.5C8.23611 0.5 8.43403 0.579861 8.59375 0.739583C8.75347 0.899306 8.83333 1.09722 8.83333 1.33333V7.16667H14.6667C14.9028 7.16667 15.1007 7.24653 15.2604 7.40625C15.4201 7.56597 15.5 7.76389 15.5 8C15.5 8.23611 15.4201 8.43403 15.2604 8.59375C15.1007 8.75347 14.9028 8.83333 14.6667 8.83333H8.83333V14.6667C8.83333 14.9028 8.75347 15.1007 8.59375 15.2604C8.43403 15.4201 8.23611 15.5 8 15.5Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.interview .more {
+    display: none; /* 모바일에서만 보임 */
+}
+
+@media screen and (min-width:641px) {
+    /*********** over 했을때 ***********/
+                .interview .list ul li a:hover .photo::before {
+                    display: none;
+                }
+                .interview .list ul li a:hover .photo img {
+                    filter: grayscale(0);
+                }
+                .interview .list ul li a:hover .txt {
+                    opacity: 0;
+                }
+                .interview .list ul li a:hover .txt_over {
+                    opacity: 1;
+                    bottom: -50px;
+                }
+}/*@media*/
+@media screen and (max-width:640px) {
+                .interview {
+                    background-color: #E2E3DD;
+                    margin: 80px 0 0 0;
+                    padding: 50px 0 102px 0
+                }
+                .interview .wrapper {
+                    position: relative; /* more 정렬의 기준 */
+                }
+                .interview .tit {
+                    text-align: left;
+                }
+                .interview .tit h2 {
+                    font-size: 25px;
+                    margin: 0 ;
+                }
+                .interview .tit p {
+                    display: none;
+                }
+                .interview .list {
+                    margin: 35px 0 0 0;
+                }
+                .interview .list ul {
+                    display: block; /* flex -> block */
+                }
+                .interview .list ul li {
+                    width: auto;
+                }
+                .interview .list ul li:nth-child(2),
+                .interview .list ul li:nth-child(3) {
+                    display: none; /* 2-3번 숨김 */
+                }
+                .interview .list ul li a .photo {
+                    height: 384px;
+                    border-radius: 20px 0 20px 0;
+                }
+                .interview .list ul li:nth-child(2) a .photo {
+                    /* 디자인이 무조건 두번재 요소는 스타일이 다름 */
+                    border-radius: 0 40px 0px 40px;
+                }
+                .interview .list ul li a .photo::before {
+                    display: none;
+                }
+                .interview .list ul li a .photo img {
+                    filter: grayscale(0);
+                }
+                .interview .list ul li a .txt {
+                    display: none;
+                }
+                .interview .list ul li a .txt_over {
+                    width: 93.12%;
+                    bottom: -70px;
+                    padding: 25px 32px 34px 24px;
+                    border-radius: 20px 0 20px 0;
+                    opacity: 1;
+                }
+                .interview .list ul li a .txt_over h3 {
+                    font-size: 20px;
+                    margin: 0 0 15px 0;
+                }
+                .interview .more {
+                    display: block; /* 모바일에서 나타남 */
+                    position: absolute;
+                    right: 0;
+                    top: 5px;
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 40%;
+                    background-color: #E2E3DD;
+                    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.54168 8.45768H1.75001C1.47848 8.45768 1.25088 8.36584 1.0672 8.18216C0.883518 7.99848 0.791677 7.77088 0.791677 7.49935C0.791677 7.22782 0.883518 7.00022 1.0672 6.81654C1.25088 6.63286 1.47848 6.54102 1.75001 6.54102H6.54168V1.74935C6.54168 1.47782 6.63352 1.25022 6.8172 1.06654C7.00088 0.882856 7.22848 0.791016 7.50001 0.791016C7.77154 0.791016 7.99914 0.882856 8.18282 1.06654C8.3665 1.25022 8.45834 1.47782 8.45834 1.74935V6.54102H13.25C13.5215 6.54102 13.7491 6.63286 13.9328 6.81654C14.1165 7.00022 14.2083 7.22782 14.2083 7.49935C14.2083 7.77088 14.1165 7.99848 13.9328 8.18216C13.7491 8.36584 13.5215 8.45768 13.25 8.45768H8.45834V13.2493C8.45834 13.5209 8.3665 13.7485 8.18282 13.9322C7.99914 14.1158 7.77154 14.2077 7.50001 14.2077C7.22848 14.2077 7.00088 14.1158 6.8172 13.9322C6.63352 13.7485 6.54168 13.5209 6.54168 13.2493V8.45768Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                .interview .more span {
+                    display: none; /* 글자 숨김 */
+                }
+}
+
+.story {
+    margin: 130px 0 0 0;
+}
+.story .wrapper {
+    position: relative; /* more 정렬의 기준 */
+}
+.story .tit h2 {
+    font-size: 40px;
+    color: #2d2d2d;
+}
+.story .list {
+    margin: 50px 0 0 0;
+}
+.story .list ul {
+    display: flex; /* li를 좌우로 배치 */
+    justify-content: space-between; /* 일반적으로 gap으로 잘 안줌 */
+}
+.story .list ul li {
+    width: calc(25% - 18px);
+    /* 100% / 한줄에 보이는 li의 갯수 = 25%
+        한줄의 여백의 총합 / 한줄에 보이는 li의 갯수 = 24 * 3 (72) / 4 = 18
+     */
+    /*border: 1px solid ededed; 라인이 있는 경우 */
+    border-radius: 30px;
+}
+.story .list ul li a {
+    display: block;
+}
+.story .list ul li a .photo {
+    overflow: hidden;
+    height: 271px; /* 짧은거 */
+    border-radius: 30px 30px 0 0;
+}
+.story .list ul li.long a .photo {
+    height: 370px; /* 긴거 */
+}
+.story .list ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+/*.story .list ul li a .txt {
+    padding: ;
+}*/
+.story .list ul li a .txt strong {
+    display: block;
+    color: #3d3d3d;
+    margin: 22px 0 0 0;
+
+     /* 1줄 제한 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.story .list ul li a .txt h3 {
+    font-size: 20px;
+    color: #2d2d2d;
+    margin: 5px 0 15px 0;
+
+    /* 1줄 제한 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.story .list ul li a .txt p {
+    /* 7줄로 제한 ---절대 padding 주면 안됨 */
+    line-height: 1.5;
+    height: 12em; /* 행간*줄수 (단위는 em) */
+    overflow: hidden;
+
+    /* 2줄 이상으로 제한할때 끝에 ... 추가하는 코드 */
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* 줄수 */
+    -webkit-box-orient: vertical;
+
+    word-break: normal;
+}
+.story .list ul li.long a .txt p {
+    height: 6em; /* 행간*줄수 (단위는 em) */
+    -webkit-line-clamp: 4; /* 줄수 */
+}
+.story .more {
+    position: absolute; /* wrapper를 기준으로 정렬 */
+    right: 5px;
+    top: 20px;
+    color: #3d3d3d;
+    padding: 0 34px 0 0;    
+}
+.story .more::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8H1C0.716667 8 0.479167 7.90417 0.2875 7.7125C0.0958333 7.52083 0 7.28333 0 7C0 6.71667 0.0958333 6.47917 0.2875 6.2875C0.479167 6.09583 0.716667 6 1 6H6V1C6 0.716667 6.09583 0.479167 6.2875 0.2875C6.47917 0.0958333 6.71667 0 7 0C7.28333 0 7.52083 0.0958333 7.7125 0.2875C7.90417 0.479167 8 0.716667 8 1V6H13C13.2833 6 13.5208 6.09583 13.7125 6.2875C13.9042 6.47917 14 6.71667 14 7C14 7.28333 13.9042 7.52083 13.7125 7.7125C13.5208 7.90417 13.2833 8 13 8H8V13C8 13.2833 7.90417 13.5208 7.7125 13.7125C7.52083 13.9042 7.28333 14 7 14C6.71667 14 6.47917 13.9042 6.2875 13.7125C6.09583 13.5208 6 13.2833 6 13V8Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media screen and (min-width:641px){
+    /****** over style *******/
+    .story .list ul li a:hover .photo img {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+    .story .list ul li a .txt h3 span {
+        position: relative; /* after 정렬의 기준 */
+    }
+    .story .list ul li a .txt h3 span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0%;
+        height: 1px;
+        background-color: #9d9d9d;
+        opacity: 0.8;
+        transition: 0.5s;
+    }
+    .story .list ul li a:hover .txt h3 span::after {
+        width: 100%;
+    }
+}/*@media*/
+@media screen and (max-width:640px){
+    
+}/*@media*/
 
 footer {
     margin: 500px 0 0 0;
