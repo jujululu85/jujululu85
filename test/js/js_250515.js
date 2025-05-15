@@ -21,6 +21,19 @@ $(document).ready(function(){
         $('.group span').text('오버전')
         //console.log('되니??')
     })
+
+    ///문서가 로딩되고 단 1번만 실행
+    let scrolling = $(window).scrollTop()
+    console.log(scrolling)
+
+    $(window).scroll(function(){
+        scrolling = $(window).scrollTop()
+        console.log(scrolling)
+        if(scrolling > 0){//스크롤값이 0보다 크면
+            $('header').addClass('fixed')
+            
+        }
+    })
 })//$(document).ready
 
 
