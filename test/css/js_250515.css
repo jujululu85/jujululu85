@@ -11,6 +11,7 @@ h1 {
     width: 500px;
     height: 300px;
     background-color: yellowgreen;
+    transition: 0.5s;
 }
 .box.bg_red {
     background-color: red;
