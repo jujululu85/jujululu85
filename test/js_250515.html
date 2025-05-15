@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <h1>자바스크립트 테스트</h1>
-        <div class="box" title="박스안녕">박스</div>
+        <div class="box" title="박스 안녕">박스</div>
     </div>
 
     <script>
@@ -23,6 +23,10 @@
         $('.box').on('mouseenter', function(){
             //box에 마우스를 오버할때마다 실행
             $('.box').addClassd('bg_red')
+        })
+        $('.box').on('mouseleave', function(){
+            //box에 마우스를 올렸다가 내렸을때마다 실행
+            $('.box').removeClass('bg_red')
         })
 
         var num = 3;
