@@ -31,8 +31,14 @@ $(document).ready(function(){
         console.log(scrolling)
         if(scrolling > 0){//스크롤값이 0보다 크면
             $('header').addClass('fixed')
-            
+        }else{
+            $('header').removeClass('fixed')
         }
+    })
+
+    $('.list ul li').on('mouseenter', function(){
+        $(this).addClass('on')
+        //li중에서 오버한 li만 지칭
     })
 })//$(document).ready
 
