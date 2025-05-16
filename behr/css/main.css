@@ -178,6 +178,7 @@ header .gnb .gnb_wrap ul li a {
     font-size: 15px;
     position: relative; 
     transition: 0.5s;
+    margin: 0 0 194px 0;
 }
 .project .list ul li a .txt span::after {
     content: "";
@@ -256,7 +257,9 @@ header .gnb .gnb_wrap ul li a {
                     font-weight: 800;
                     color: #1d1d1d;  
                 }
-                
+                .project .list ul li a .txt span {
+                    margin: 0 0 177px 0;
+                }
 }/*@media*/
 /****************** 제품 스타일 끝 ***************************************/
 
