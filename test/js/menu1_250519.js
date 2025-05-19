@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    /* pc/mpbile을 분리해서 jquery 동작 ... 
+    /* pc/mobile을 분리해서 jquery 동작 ... 
         css와 동일하게 브라우저 넓이를 계산해서
         1024를 기준으로
         1024 이하는 모바일
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
    $('header .gnb .gnb_wrap ul.depth1 > li').on('mouseenter focusin', function(){
     if(device_status == 'pc'){ //pc버전일때
-        console.log('오버했다 오버했다...')
+        //console.log('오버했다 오버했다...')
         $('header').addClass('menu_over')
 
         /* 이전에 마우스를 오버햇던 li에서는 over를 삭제해야 하는데
@@ -59,7 +59,7 @@ $(document).ready(function(){
     })
 
     /* 메뉴는 오버를 감지하는 영역보다 out을 잡아주는 영역이 커야함 */
-        $('header .gnb').on('mouseenter', function(){
+        $('header .gnb').on('mouseleave', function(){
         $('header').removeClass('menu_over')
         $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
     })
