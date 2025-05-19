@@ -183,20 +183,20 @@ header .tnb .search {
         }
 
         /**************** 모바일 메뉴 열림 *******************/
-        header.munu_open .gnb .gnb_wrap {
+        header.menu_open .gnb .gnb_wrap {
             display: block;
         }
-        header.munu_open .gnb .gnb_close {
+        header.menu_open .gnb .gnb_close {
             display: block;
         }
-        header.munu_open .gnb .gnb_wrap ul.depth1 > li.open > a {
+        header.menu_open .gnb .gnb_wrap ul.depth1 > li.open > a {
             color: #014289;
             font-weight: 800;
         }
-        header.munu_open .gnb .gnb_wrap ul.depth1 > li.open > a::after {
+        header.menu_open .gnb .gnb_wrap ul.depth1 > li.open > a::after {
             background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_51_456' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='26' height='26'%3E%3Crect width='26' height='26' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_51_456)'%3E%3Cpath d='M13 11.7L8.77503 15.8979C8.57642 16.0965 8.32816 16.2003 8.03024 16.2094C7.73232 16.2184 7.47503 16.1146 7.25837 15.8979C7.05975 15.6993 6.96045 15.4465 6.96045 15.1396C6.96045 14.8326 7.05975 14.5799 7.25837 14.3812L12.2417 9.39792C12.35 9.28958 12.4674 9.21285 12.5938 9.16771C12.7202 9.12257 12.8556 9.1 13 9.1C13.1445 9.1 13.2799 9.12257 13.4063 9.16771C13.5327 9.21285 13.65 9.28958 13.7584 9.39792L18.7417 14.3812C18.9403 14.5799 19.0441 14.8281 19.0532 15.126C19.0622 15.424 18.9584 15.6812 18.7417 15.8979C18.5431 16.0965 18.2903 16.1958 17.9834 16.1958C17.6764 16.1958 17.4236 16.0965 17.225 15.8979L13 11.7Z' fill='%23014289'/%3E%3C/g%3E%3C/svg%3E ");
         }
-        header.munu_open .gnb .gnb_wrap ul.depth1 > li.open > ul.depth2 {
+        header.menu_open .gnb .gnb_wrap ul.depth1 > li.open > ul.depth2 {
             display: block;
         }
 }/*@media*/
