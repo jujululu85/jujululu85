@@ -14,7 +14,7 @@ $(document).ready(function(){
         device_chk() //함수의 실행
     })
 
-    function device_chk(){
+    function device_chk(){ //함수의 정의
         win_w = $(window).width()
         console.log(win_w)
         win_w = $(window).width()
@@ -43,8 +43,8 @@ $(document).ready(function(){
    // $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
 
    $('header .gnb .gnb_wrap ul.depth1 > li').on('mouseenter focusin', function(){
-    if(device_status == 'pc'){ //pc버전일때
-        //console.log('오버했다 오버했다...')
+    if(device_status == 'pc'){ //pc일때만 실행
+        //console.log('오버했다 오버했다...pc 버전꺼...')
         $('header').addClass('menu_over')
 
         /* 이전에 마우스를 오버햇던 li에서는 over를 삭제해야 하는데
@@ -59,7 +59,7 @@ $(document).ready(function(){
     })
 
     /* 메뉴는 오버를 감지하는 영역보다 out을 잡아주는 영역이 커야함 */
-        $('header .gnb').on('mouseleave', function(){
+    $('header .gnb').on('mouseleave', function(){
         $('header').removeClass('menu_over')
         $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
     })
