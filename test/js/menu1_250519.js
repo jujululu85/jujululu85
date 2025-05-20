@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    /* pc/mpbile을 분리해서 jquery 동작 ... 
+    /* pc/mobile을 분리해서 jquery 동작 ... 
         css와 동일하게 브라우저 넓이를 계산해서
         1024를 기준으로
         1024 이하는 모바일
@@ -14,7 +14,7 @@ $(document).ready(function(){
         device_chk() //함수의 실행
     })
 
-    function device_chk(){
+    function device_chk(){ //함수의 정의
         win_w = $(window).width()
         console.log(win_w)
         win_w = $(window).width()
@@ -43,8 +43,8 @@ $(document).ready(function(){
    // $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
 
    $('header .gnb .gnb_wrap ul.depth1 > li').on('mouseenter focusin', function(){
-    if(device_status == 'pc'){ //pc버전일때
-        console.log('오버했다 오버했다...')
+    if(device_status == 'pc'){ //pc일때만 실행
+        //console.log('오버했다 오버했다...pc 버전꺼...')
         $('header').addClass('menu_over')
 
         /* 이전에 마우스를 오버햇던 li에서는 over를 삭제해야 하는데
@@ -59,7 +59,7 @@ $(document).ready(function(){
     })
 
     /* 메뉴는 오버를 감지하는 영역보다 out을 잡아주는 영역이 커야함 */
-        $('header .gnb').on('mouseenter', function(){
+    $('header .gnb').on('mouseleave', function(){
         $('header').removeClass('menu_over')
         $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
     })
@@ -87,7 +87,7 @@ $(document).ready(function(){
 
         4. 모바일에서 1차메뉴를 클릭하면 1차메뉴 a에 입력되어 있는 링크 주소로이동
            메뉴를 안열고 ...
-           a태그에 있는 herf로 페이지 이동되는 것을 막아야함 ...
+           a태그에 있는 href로 페이지 이동되는 것을 막아야함 ...
            a에 클릭했을때로 선택자 변경
            $(this)가 a가 됨 ... 난 li를 선택해야 하는데 ...
            $(this).parents('li') 로 클릭한 a의 상위요소 li를 선택
