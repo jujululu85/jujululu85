@@ -1,0 +1,97 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common_full.css);
+
+.visual .swiper {
+    height: 900px;
+}
+.visual .swiper-slide {
+    height: 900px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.visual .swiper-slide.popup1 {
+    background-image: url(../images/popup01.jpg);
+}
+.visual .swiper-slide.popup2 {
+    background-image: url(../images/popup02.jpg);
+}
+.visual .swiper-slide.popup3 {
+    background-image: url(../images/popup03.jpg);
+}
+.visual h3 {
+    font-size: 50px;
+    font-weight: 800;
+    padding: 407px 0 30px 0;
+}
+.visual .paging {
+    position: absolute; /* swiper를 기준으로 정렬 */
+    left: 0;
+    bottom: 40px;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    display: flex; /* span태그 좌우 배치 */
+    justify-content: center; /* 가운데 */
+    gap: 5px;
+}
+.visual .paging .swiper-pagination-bullet {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0;
+    background: none;
+    opacity: 1;
+}
+.visual .paging .swiper-pagination-bullet .swiper-pagination-bullet-active {
+    /* 현재 팝업 동그라미 */
+    background-color: #fff;
+}
+.visual .btn_prev {
+    position: absolute; /* swiper를 기준으로 정렬 */
+    left: 38px;
+    top: 425px;
+    z-index: 10;
+    width: 26px;
+    height: 47px;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='47' viewBox='0 0 26 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.7799 23.516L25.067 41.7331C25.689 42.3528 25.9896 43.0757 25.9689 43.9018C25.9482 44.728 25.6268 45.4509 25.0048 46.0706C24.3828 46.6902 23.6571 47 22.8278 47C21.9984 47 21.2727 46.6902 20.6507 46.0706L1.49282 27.0479C0.995215 26.5522 0.62201 25.9945 0.373206 25.3749C0.124402 24.7553 0 24.1356 0 23.516C0 22.8964 0.124402 22.2767 0.373206 21.6571C0.62201 21.0375 0.995215 20.4798 1.49282 19.9841L20.6507 0.899464C21.2727 0.279833 22.0088 -0.019655 22.8589 0.000999405C23.7089 0.0216538 24.445 0.341796 25.067 0.961427C25.689 1.58106 26 2.30396 26 3.13014C26 3.95631 25.689 4.67921 25.067 5.29884L6.7799 23.516Z' fill='white'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.visual .btn_next {
+    position: absolute; /* swiper 기준으로 정렬 */
+    right: 38px;
+    top: 425px;
+    z-index: 10;
+    width: 26px;
+    height: 47px;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='47' viewBox='0 0 26 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.7799 23.516L25.067 41.7331C25.689 42.3528 25.9896 43.0757 25.9689 43.9018C25.9482 44.728 25.6268 45.4509 25.0048 46.0706C24.3828 46.6902 23.6571 47 22.8278 47C21.9984 47 21.2727 46.6902 20.6507 46.0706L1.49282 27.0479C0.995215 26.5522 0.62201 25.9945 0.373206 25.3749C0.124402 24.7553 0 24.1356 0 23.516C0 22.8964 0.124402 22.2767 0.373206 21.6571C0.62201 21.0375 0.995215 20.4798 1.49282 19.9841L20.6507 0.899464C21.2727 0.279833 22.0088 -0.019655 22.8589 0.000999405C23.7089 0.0216538 24.445 0.341796 25.067 0.961427C25.689 1.58106 26 2.30396 26 3.13014C26 3.95631 25.689 4.67921 25.067 5.29884L6.7799 23.516Z' fill='white'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:1440px) {
+    .visual .btn_prev,
+    .visual .btn_next {
+        display: none; /* 숨김 */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .visual .swiper {
+        height: 700px;
+    }
+    .visual h3 {
+        font-size: 30px;
+        font-weight: 800;
+        padding: 332px 0 30px 0;
+    }
+    .visual .paging {
+        bottom: 30px;
+    }
+}/*@media*/
