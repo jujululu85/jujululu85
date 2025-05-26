@@ -26,5 +26,6 @@ $(document).ready(function(){
         },
 
     });
-        
+    visual_swiper.autoplay.stop(); /* 일시정지 기능 */
+    visual_swiper.autoplay.start(); /* 재생 기능 */
 })//$(document).ready

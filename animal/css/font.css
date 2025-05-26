@@ -1,0 +1,13 @@
+/* 웹폰트를 선언 */
+@font-face {
+    font-family: "CookieRun-Regular";
+	font-style: normal;
+    font-weight: 400;
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: "CookieRunOTF-Bold";
+	font-style: normal;
+    font-weight: 700;
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+}
