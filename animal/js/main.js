@@ -49,15 +49,21 @@ $(document).ready(function(){
         $('header').addClass('fixed')
     })
     $('header').on('mouseleave', function(){
-        console.log('아웃')
+        /* 브라우저가 스크롤된 상태에서는 header에 fixed 클래스를 삭제하면 안됨
+            맨위에 있을때만 삭제해야함 */
+        if(scrolling <= 0){
+            //console.log('지금은 아니야..하지마..')
+            console.log('아웃')
         $('header').removeClass('fixed')
+        }//if종료
+        
     })
 
 
     /**************************** header 와 메뉴 : 종료 ******************************/
 
     /**************************** visual swiper : 시작 ******************************/
-    const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
+    const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싸는 요소의 class명 */
 
         autoplay: {  /* 팝업 자동 실행 */
             delay: 2500,
