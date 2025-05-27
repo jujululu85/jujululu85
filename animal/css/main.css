@@ -204,7 +204,7 @@ header.fixed .logo a {
             background-repeat: no-repeat;
         }
         header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 {
-            background-color: #D9D9D9;
+            background-color: #f4f4f4;
             color: #3D3D3D;
             padding: 29px 0 30px 22px;
             display: none; /* 숨김 */
