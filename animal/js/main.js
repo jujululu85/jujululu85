@@ -25,9 +25,8 @@ $(document).ready(function(){
     })
 
     function scroll_chk(){
-        //console.log('스크롤했다!!!!!!!!!')
         scrolling = $(window).scrollTop()
-        console.log(scrolling)
+        //console.log(scrolling)
         if(scrolling > 0){
             $('header').addClass('fixed')
         }else{
@@ -43,6 +42,16 @@ $(document).ready(function(){
         }
         //console.log(device_status)
     }
+
+    /* header에 마우스를 오버했을때 */
+    $('header').on('mouseenter', function(){
+        console.log('오버했다!!!!!')
+        $('header').addClass('fixed')
+    })
+    $('header').on('mouseleave', function(){
+        console.log('아웃')
+        $('header').removeClass('fixed')
+    })
 
 
     /**************************** header 와 메뉴 : 종료 ******************************/
