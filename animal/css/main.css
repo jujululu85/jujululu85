@@ -136,7 +136,15 @@ header.fixed .logo a {
                 display: flex; /* li를 좌우로 배치 */
             }
 }
-
+@media screen and (min-width:1025px) and (max-width:1280px) { /* 1280~1025까지만 적용 */
+        header .gnb .gnb_wrap ul.depth1 > li > a {
+            padding: 0 15px;
+            font-size: 20px;
+        }
+        header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a {
+            padding: 15px 10px 14px 10px;
+        }
+}
 
 .visual .swiper-slide {
     height: 800px;
