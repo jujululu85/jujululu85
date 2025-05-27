@@ -154,6 +154,18 @@ header.fixed .logo a {
             width: 120x;
             height: 25px;
         }
+        header .gnb .gnb_open {
+
+        }
+        header .gnb .gnb_wrap {
+            display: none; /* 숨김 */
+        }
+        header .gnb .gnb_close {
+            display: none; /* 숨김 */
+        }
+        header .util {
+            display: none; /* 숨김 */
+        }
 }
 
 .visual .swiper-slide {
