@@ -25,7 +25,14 @@ $(document).ready(function(){
     })
 
     function scroll_chk(){
-        console.log('스크롤했다!!!!!!!!!')
+        //console.log('스크롤했다!!!!!!!!!')
+        scrolling = $(window).scrollTop()
+        console.log(scrolling)
+        if(scrolling > 0){
+            $('header').addClass('fixed')
+        }else{
+            $('header').removeClass('fixed')
+        }
     }
     function resize_chk(){
         window_w = $(wind).width()
@@ -34,7 +41,7 @@ $(document).ready(function(){
         }else{
             device_status = 'mobile'
         }
-        console.log(device_status)
+        //console.log(device_status)
     }
 
 
