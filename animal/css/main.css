@@ -388,9 +388,9 @@ header.fixed .logo a {
 }/*@media*/
 
 .find {
-    background-color: #143546;
+    background-color: #050835;
     color: #fff;
-    padding: 150px 0;
+    padding: 125px 0;
 }
 .find .tit h2 {
     text-align: center;
@@ -448,7 +448,7 @@ header.fixed .logo a {
     object-fit: cover;
     transition: 0.5s;
 }
-/****************** 마우스 오버 효과************************/
+/* 마우스 오버 효과 */
 .find .list .tab_content .tab_item > ul > li a:hover .photo img {
     transform: scale3d(1.2, 1.2, 1);
 }
@@ -507,7 +507,7 @@ header.fixed .logo a {
 }
 @media screen and (max-width:1024px) {
     .find .list .tab_content .tab_item > ul {
-        gap: 32px 16px;
+        gap: 20px 16px;
         flex-wrap: wrap; /* 줄바꿈 허용 */
     }
     .find .list .tab_content .tab_item > ul > li {
@@ -520,59 +520,58 @@ header.fixed .logo a {
     }
 }/*@media*/
 @media screen and (max-width:768px) {
-    .find {
-        padding: 75px 0;
-    }
-    .find .tit h2 {
-        font-size: 30px;
-    }
-    .find .list {
-        margin: 24px 0 0 0;
-    }
-    .find .list .tab_list ul {
-        gap: 5px;
-    }
-    .find .list .tab_list ul li button {
-        font-size: 19x;
-        padding: 7px 23px 7PX 23PX;
-    }
-    .find .list .tab_content {
-        margin: 37px 0 0 0;
-    }
-    
-    .find .list .tab_content .tab_item > ul > li a .subject {
-        display: block;
-        margin: 7px 0 0 0;
-        position: relative; /* strong 카테고리 정렬의 기준 */
-    }
-    .find .list .tab_content .tab_item > ul > li a .subject strong {
-        position: absolute;
-        left: 0;
-        top: -44px;
-        padding: 0 20px 0 18px;
-        border-radius: 10px;
-        font-size: 15px;
-        line-height: 28px;
-    }
-    .find .list .tab_content .tab_item > ul > li a .subject h4 {
-        font-size: 18px;
-    }
-    .find .list .tab_content .tab_item > ul > li a ul.detail {
-        margin: 5px 0 0 0;
-    }
-    .find .list .tab_content .tab_item > ul > li a ul.detail li { 
-        display: block;
-    }
-    .find .list .tab_content .tab_item > ul > li a ul.detail li:last-child {
-        display: none;
-    }
-    .find .list .tab_content .tab_item > ul > li a ul.detail li strong {
-        display: none;
-    }
-    .find .list .tab_content .tab_item > ul > li a ul.detail li span {
-        display: block;
-        color: rgba(255,255,255,0.8);
-    }
+            .find {
+                padding: 80x 0;
+            }
+            .find .tit h2 {
+                font-size: 30px;
+            }
+            .find .list {
+                margin: 16px 0 0 0;
+            }
+            .find .list .tab_list ul {
+                gap: 5px;
+            }
+            .find .list .tab_list ul li button {
+                font-size: 19x;
+                padding: 7px 23px 7PX 23PX;
+            }
+            .find .list .tab_content {
+                margin: 22px 0 0 0;
+            }
+            .find .list .tab_content .tab_item > ul > li a .subject {
+                display: block;
+                margin: 7px 0 0 0;
+                position: relative; /* strong 카테고리 정렬의 기준 */
+            }
+            .find .list .tab_content .tab_item > ul > li a .subject strong {
+                position: absolute;
+                left: 0;
+                top: -32px;
+                padding: 0 11px 0 11px;
+                border-radius: 10px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .find .list .tab_content .tab_item > ul > li a .subject h4 {
+                font-size: 18px;
+            }
+            .find .list .tab_content .tab_item > ul > li a ul.detail {
+                margin: 5px 0 0 0;
+            }
+            .find .list .tab_content .tab_item > ul > li a ul.detail li { 
+                display: block;
+            }
+            .find .list .tab_content .tab_item > ul > li a ul.detail li:last-child {
+                display: none;
+            }
+            .find .list .tab_content .tab_item > ul > li a ul.detail li strong {
+                display: none;
+            }
+            .find .list .tab_content .tab_item > ul > li a ul.detail li span {
+                display: block;
+                color: rgba(255,255,255,0.8);
+            }
 }/*@media*/
 
 .slogan {
@@ -596,7 +595,7 @@ header.fixed .logo a {
 }
 .slogan .sub_tit span.item1 {
     width: 2.47em;
-    /* 넓이가 136px - 글자크기 55px
+    /* 넓이가 136px / 글자크기 55px
         136/55 = 2.47 em 
         1em은 현재 해당 요소에 상속된 글자크기를 1로봄 */
 }
@@ -618,7 +617,7 @@ header.fixed .logo a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* span의 영역의 위아래 가운데 좌우에 가운데 */
+    /* span의 영역에 위아래 가운데 좌우에 가운데 */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -728,7 +727,7 @@ header.fixed .logo a {
 .adopt .list .swiper-slide a h3 {
     font-size: 19px;
     font-weight: 700;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
 }
 .adopt .list .swiper-slide a p {
     color: rgba(255,255,255,0.8);

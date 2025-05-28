@@ -141,7 +141,7 @@ $(document).ready(function(){
         if($(this).hasClass('active') == fales) {
             //console.log('선택안된메뉴')
             find_content = $(this).attr('data-content')
-            console.log(find_content)
+            //console.log(find_content)
 
             $('.find .list .tab_content .tab_item').removeClass('active')
             $('.find .list .tab_content').find('#'+find_content).addClass('active')
