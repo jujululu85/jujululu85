@@ -1,14 +1,14 @@
 
 $(document).ready(function(){
- 
-    /**************************** header 와 메뉴 : 시작 *************************
-     *  pc인지 모바일인지 구분 - 브라우저 넓이로..
-     *  스크롤값 계산
-     *  공통사항 : 브라우저가 스크롤되면 OR header에 오버하면 header에 fixed 클래스를 추가
-     *  pc일때 : 마우스를 오버한 li에만 over 클래스 추가 
-     *  모바일일때 : 메뉴열기를 클릭하면 header에 menu_open 클래스 추가
-     *              1차메뉴를 클릭하면 (하위메뉴가 있는 1차메뉴만) 클릭한 li에 open 클래스 추가 
-     * *****/
+    
+    /*************************** header 와 메뉴 : 시작 *************************
+    * pc인지 모바일인지 구분 - 브라우저 넓이로.. 
+    * 스크롤값 계산 
+    * 공통사항 : 브라우저가 스크롤되면 OR header에 오버하면 header에 fixed 클래스를 추가
+    * PC일때 : 마우스를 오버한 li에만 over 클래스 추가
+    * 모바일때 : 메뉴열기를 클릭하면 header에 menu_open 클래스 추가
+    *           1차메뉴를 클릭하면 (하위메뉴가 있는 1차메뉴만)  클릭한 li에 open 클래스 추가
+    *****/
 
     let device_status //모바일인지 pc인지
     let scrolling //스크롤한 값
@@ -20,7 +20,7 @@ $(document).ready(function(){
     $(window).resize(function(){ //브라우저가 리사이즈될때마다 1번씩 실행
         resize_chk() //함수실행
     })
-    $(window).scroll(function(){ //브라우저가 스크롤 할때마다 1번씩 실행
+    $(window).scroll(function(){ //브라우저를 스크롤 할때마다 1번씩 실행
         scroll_chk() //함수실행
     })
 
@@ -85,99 +85,53 @@ $(document).ready(function(){
         동시에 여러개의 메뉴가 열려있을 수도 있음
         toggleClass - 클래스가 없으면 추가하고, 있으면 삭제
     */
-        $('header .gnb .gnb_wrap ul.depth1 > li:has(ul.depth2) > a').on('click', function(e){
-            if(device_status == 'mobile'){
-                e.preventDefault()
-                console.log('클릭했다!!!!!!!!!!!')
-                $(this).parents('li').toggleClass('open')
-            }
+    $('header .gnb .gnb_wrap ul.depth1 > li:has(ul.depth2) > a').on('click', function(e){
+        if(device_status == 'mobile'){
+            e.preventDefault()
+            console.log('클릭했다!!!!!!!!!!!')
+            $(this).parents('li').toggleClass('open')
+        }
     })
 
+    /*************************** header 와 메뉴 : 종료 *****************************/
 
-
-    /**************************** header 와 메뉴 : 종료 ******************************/
-
-    /**************************** visual swiper : 시작 ******************************/
-    const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싸는 요소의 class명 */
-
+    /*************************** visual swiper : 시작 *****************************/
+    const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 2500,
-            disableOnInteraction: true,
+             delay: 5000,
+             disableOnInteraction: true,
         },
-
         //effect: "fade", /* fade 효과 */
-
         loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
-
         navigation: {  /* 이전, 다음 버튼 */
             nextEl: '.visual .btn_wrap button.btn_next',  /* 다음 버튼의 클래스명 */
             prevEl: '.visual .btn_wrap button.btn_prev',  
         },
-
     });
-    
     $('.visual .btn_wrap button.btn_stop').on('click', function(){
-        visual_swiper.autoplay.stop(); /* 일시정지 기능 */
+        //console.log('일시정지 버튼 클릭')
+        visual_swiper.autoplay.stop();  /* 일시정지 기능 */
         $(this).hide() //정지버튼 자신은 숨김
-        $('.visual .btn_wrap button.btn_play').show() // 재생 나타남
+        $('.visual .btn_wrap button.btn_play').show() //재생 나타남
     })
     $('.visual .btn_wrap button.btn_play').on('click', function(){
         //console.log('재생 버튼 클릭')
-        visual_swiper.autoplay.start(); /* 재생 기능 */
+        visual_swiper.autoplay.start();  /* 재생 기능 */
         $(this).hide() //재생버튼 자신은 숨김
         $('.visual .btn_wrap button.btn_stop').show() //정지버튼이 나타남
     })
-    /**************************** visual swiper : 끝 ****************************/
+    /*************************** visual swiper : 끝 *****************************/
 
-    /**************************** find 탭 기능 : 시작 ************************
-     *  1. 클릭한 li에서 data-content 값을 가져와서
-     *   ==> tab_item 중에 해당 값이 id인 요소를 찾아서나타나게 해야함 (다른 요소는 숨김)
-     *  2. 클릭한 li에만 active 클래스 줌
-     *  3. 클릭한 li안에 있는 span에 ****/
-
+    /**************************** find 탭 기능 : 시작 ********************* */
     let find_content //클릭한 메뉴의 이름(id)
     $('.find .list .tab_list ul li').on('click', function(){
-
-        if($(this).hasClass('active') == fales) {
+        
+        if($(this).hasClass('active') == false){
             //console.log('선택안된메뉴')
             find_content = $(this).attr('data-content')
             console.log(find_content)
-
-            $('.find .list .tab_content .tab_item').removeClass('active')
-            $('.find .list .tab_content').find('#'+find_content).addClass('active')
-
-            $('.find .list .tab_list ul li').removeClass('active')
-            $(this).addClass('active')
-
-            $('.find .list .tab_list ul li button span').text('')
-            $(this).find('span').text('선택됨')
-
-            $('.find .list .tab_list ul li').attr('aria-selected', 'false')
-            $(this).attr('aria-selected', 'true')
         }
-    })    
+    })
 
-/**************************** find 탭 기능 : 끝 *******************************/
-
-/****************************** 분양 swiper : 시작 *****************************/
-
-    const adopt_swiper = new Swiper('.adopt .swiper', { /* 팝업을 감싼는 요소의 class명 */
-        slidesPerView: 'auto', /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
-        spaceBetween: 16, /* 팝업과 팝업 사이 여백 */
-        breakpoints: {
-            768: {    /* 640px 이상일때 적용 */
-                spaceBetween: 24,
-                centeredSlides: true
-            },
-        },
-        centeredSlides: false, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
-        loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
-        navigation: {
-            nextEl: '.adopt .list_ctrl .btn_next',
-            prevEl: '.adopt .list_ctrl .btn_prev',
-        },
-    });
-
-/****************************** 분양 swiper : 끝 *****************************/
-
-})//$(document).ready
+    /**************************** find 탭 기능 : 끝 ********************* */
+})

@@ -12,7 +12,6 @@
 
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="favicon.svg" type="image/x-icon">
     <title>동물보호센터</title>
 </head>
 <body>
@@ -22,7 +21,7 @@
     </div>
     <div id="wrap">
         <!--
-            header에 마우스를 오버하거나..스크롤을 내리면 - fixed 클래스 추가
+            header에 마우스를 오버하거나.. 스크롤을 내리면 - fixed 클래스 추가
             메뉴에 마우스를 오버하면 오버한 li에만 over 클래스를 추가
 
             모바일에서 메뉴 열기 버튼을 클릭하면 header에 menu_open 클래스 추가
@@ -35,34 +34,33 @@
                 <div class="gnb_wrap">
                     <ul class="depth1">
                         <li>
-                            <a href="https://www.naver.com/"><span>찾습니다</span></a>
+                            <a href="https://samsungfire.com/"><span>찾습니다</span></a>
                             <ul class="depth2">
                                 <li><a href="#"><span>실종신고</span></a></li>
                                 <li><a href="#"><span>구조정보/목격담</span></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="https://www.naver.com/"><span>구조분양</span></a>
+                            <a href="https://samsungfire.com/"><span>구조분양</span></a>
                         </li>
                         <li>
-                            <a href="https://www.naver.com/"><span>네트워크</span></a>
+                            <a href="https://samsungfire.com/"><span>네트워크</span></a>
                             <ul class="depth2">
                                 <li><a href="#"><span>동물찾기 네트워크</span></a></li>
-                                <li><a href="https://www.animal.go.kr/front/index.do" target="_blank" title="새창열림"><span>국가동물보호정보시스템</span></a></li>
+                                <li><a href="https://www.animal.go.kr" target="_blank" title="새창열림"><span>국가동물보호정보시스템</span></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="https://www.naver.com/"><span>재회성공담</span></a>
+                            <a href="https://samsungfire.com/"><span>재회성공담</span></a>
                         </li>
                         <li>
-                            <a href="https://www.naver.com/"><span>대처방법</span></a>
+                            <a href="https://samsungfire.com/"><span>대처방법</span></a>
                             <ul class="depth2">
                                 <li><a href="#"><span>실종시 대처방법</span></a></li>
                                 <li><a href="#"><span>구조시 대처방법</span></a></li>
                                 <li><a href="#"><span>고양이에 대해</span></a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
                 <button class="gnb_close"><span class="blind">메뉴닫기</span></button>
@@ -80,12 +78,12 @@
                     <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
                         <li class="swiper-slide bg1">
                             <div class="wrapper">
-                                <p>작은 관심이 <br> 실종 동물에게 큰 희망이 됩니다</p>
+                                <p>사랑으로 맺어진 <br> 가족의 시작, 입양</p>
                             </div>
-                        </li> 
+                        </li>
                         <li class="swiper-slide bg2">
                             <div class="wrapper">
-                                <p>사랑으로 맺어진 <br> 가족의 시작, 입양</p>
+                                <p>작은 관심이 실종 동물에게 <br> 큰 희망이 됩니다</p>
                             </div>
                         </li>
                         <li class="swiper-slide bg3">
@@ -100,7 +98,6 @@
                         <button class="btn_stop"><span class="blind">일시정지</span></button>
                         <button class="btn_play"><span class="blind">다시시작</span></button>
                     </div><!--btn_wrap-->
-                    
                 </div><!--swiper-->
             </section><!--visual-->
             <section class="find" id="skip_content">
@@ -117,7 +114,7 @@
                                      li를 클릭했을때 data-content값을 호출해서 id가 같은 요소만 보이게함 
                                      data-content 는 내맘대로 속성을 추가.... (값을 저장할 공간이 필요해서 - 표준위배)
                                      data-link라던가 ... data-value 이렇게 data가 들어간 속성은 퍼블이 만든 속성 -->
-                                <li role="tab" aria-selected="true" class="item1 active" data-content="tab_item1"><button>가족을 <span class="blind">선택됨</span></button></li>
+                                <li role="tab" aria-selected="true" class="item1 active" data-content="tab_item1"><button>가족을 <span class="">선택됨</span></button></li>
                                 <li role="tab" aria-selected="false" class="item2 " data-content="tab_item2"><button>주인을 <span class=""></span></button></li>
                             </ul>
                         </div><!--tab_list-->
@@ -322,91 +319,8 @@
                     </div><!--//list-->
                 </div>
             </section><!--find-->
-            <section class="slogan">
-                <div class="wrapper">
-                    <h2 class="blind">구조동물 발견 시 대처요령</h2>
-                    <p class="sub_tit"><strong>공공장소 <span class="item1">!</span> 에서</strong><strong>주인 없이 떠도는</strong><br>
-                        <strong>동물 <span class="item2">!</span> 을</strong><strong>발견한 경우</strong><br>
-                        <strong>관할 시군구청 또는</strong><strong> 동물보호센터 <span class="item3">!</span> 에</strong><br>
-                        <strong>신고 <span class="item4">!</span> 하시기 바랍니다</strong></p>
-                    <p class="ex">※ 소유자를 알 수 없는 동물을 신고하지 않고 알선·구매하는 경우, 포획하여 팔거나 판매하거나 죽일 목적으로 포획하는 경우에는 동물보호법 <br> 제10조제3항제1호·제3호·제4호를 위반하여 2년 이하 징역이나 2천만원 이하 벌금이 부과됩니다.</p>
-                </div>
-            </section><!--slogan-->
-            <section class="adopt">
-                <div class="tit">
-                    <h2>가족이 되어주세요</h2>
-                </div>
-                <div class="list">
-                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
-                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt01.jpg" alt=""></div>
-                                    <strong class="cate_adopt">분양</strong>
-                                    <h3>태비 단모  암컷  3개월</h3>
-                                    <p>경기도 수원시 권선구<br>미용한지 얼마 안지나 몸털이 짧음</p>
-                                </a>
-                            </li>
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt02.jpg" alt=""></div>
-                                    <strong class="cate_care">임보</strong>
-                                    <h3>카바푸 / 암컷 / 2살</h3>
-                                    <p> 경기도 이천시 호국원<br>털이 많지 않은 푸들입니다.</p>
-                                </a>
-                            </li> 
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt03.jpg" alt=""></div>
-                                    <strong class="cate_adopt">분양</strong>
-                                    <h3>시베리안 냥이 수컷  6개월</h3>
-                                    <p>광주광역시 동구 지산동<br>고등어 냥이 이름이 Forest 입니다.</p>
-                                </a>
-                            </li> 
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt04.jpg" alt=""></div>
-                                    <strong class="cate_adopt">분양</strong>
-                                    <h3>토이 푸들  암컷  7개월</h3>
-                                    <p>경기도 김포시 구래역<br>기침이 잦고 심장이 안 좋음</p>
-                                </a>
-                            </li> 
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt05.jpg" alt=""></div>
-                                    <strong class="cate_care">임보</strong>
-                                    <h3>먼치킨/ 수컷 / 2살</h3>
-                                    <p>충청남도 공주시 공주<br>겁이 많고 잘 우는데 편해지면 잘 따릅니다.</p>
-                                </a>
-                            </li> 
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt06.jpg" alt=""></div>
-                                    <strong class="cate_care">임보</strong>
-                                    <h3>태비 단모  수컷  3개월</h3>
-                                    <p>경경기도 구리시 교문동<br>낯선사람의 대한 경계심 있고 겁도 많은편</p>
-                                </a>
-                            </li> 
-                            <li class="swiper-slide">
-                                <a href="#">
-                                    <div class="photo"><img src="images/adopt07.jpg" alt=""></div>
-                                    <strong class="cate_adopt">분양</strong>
-                                    <h3>골든리트리버  암컷  2개월</h3>
-                                    <p>경기도 남양주시 장현천로<br>집에서탈출 이름 금동이입니다.</p>
-                                </a>
-                            </li> 
-                        </ul>
-                    </div>
-                </div>
-                <div class="list_ctrl">
-                    <button class="btn_prev"><span class="blind">이전팝업보기</span></button>
-                    <button class="btn_next"><span class="blind">다음팝업보기</span></button>
-                    <a href="#" class="more">전체보기</a>
-                </div>
-                <div class="rolling">
-                    <p>DON’T BUY A PET, ADOPT ONE. DON’T BUY A PET, ADOPT ONE. DON’T BUY A PET, ADOPT ONE. DON’T BUY A PET, ADOPT ONE.</p>
-                </div>
-            </section><!--adopt-->
+            <section class="slogan"></section><!--slogan-->
+            <section class="adopt"></section><!--adopt-->
             <section class="review"></section><!--review-->
         </main>
         <footer></footer>
