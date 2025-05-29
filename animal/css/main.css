@@ -1130,7 +1130,7 @@ footer .link_wrap ul.link li {
 footer .link_wrap ul.link li a {
     display: block;
     text-align: right;
-    padding: 22px;
+    padding-right: 25px;
     position: relative; /* after 정렬의 기준 */
 }
 footer .link_wrap ul.link li a::after {
