@@ -1060,7 +1060,7 @@ footer .wrapper {
 footer .top {
     position: absolute;
     right:  38px;
-    top: -90px;
+    top: -97px;
     mix-blend-mode: difference;
     /* 반전 - 흰색배경에서는 검은색 (배경색과 반대로)
         배경색이 흰색이라면 진짜 흰색을 배경색으로 깔아줘야함 - 그래야 적용됨 
