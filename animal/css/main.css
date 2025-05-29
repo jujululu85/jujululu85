@@ -1059,7 +1059,7 @@ footer .wrapper {
 }
 footer .top {
     position: absolute;
-    right:  20px;
+    right:  38px;
     top: -90px;
     mix-blend-mode: difference;
     /* 반전 - 흰색배경에서는 검은색 (배경색과 반대로)
