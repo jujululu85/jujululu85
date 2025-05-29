@@ -1186,7 +1186,7 @@ footer .info_wrap .info ul li {
 footer .info_wrap .info ul li::after {
     content: "";
     position: absolute;
-    right: -20px;
+    right: -22px;
     top: 7px;
     width: 1px;
     height: 12px;
