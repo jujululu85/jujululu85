@@ -520,6 +520,10 @@ header.fixed .logo a {
     animation-iteration-count: infinite; /* 무제한 */
     animation-timing-function: linear; /* 가속도 삭제 */
 }
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% {  transform: rotate(-360deg);}
+}
 /*
 @media screen and (max-width:1024px) {
     .find .emblem {
@@ -1103,7 +1107,7 @@ footer .top {
     border-radius: 10px;
     background-color: #FF7887;
     color: #fff;
-    padding: 26px 0 10px 0;
+    padding: 22px 0 0 0;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
