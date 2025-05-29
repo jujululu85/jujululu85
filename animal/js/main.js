@@ -213,8 +213,8 @@ const review_swiper = new Swiper('.review .swiper', { /* 팝업을 감싼는 요
 
 /****************************** footer top버튼 : 시작 ****************************/
 $('footer .top').on('click', function(){
-    console.log('클릭')
-    $(window).scrollTop(0)
+    //console.log('클릭')
+    //$(window).scrollTop(0)
     $('html, body').animate({
         scrollTop: 0
     }, 500)
