@@ -1008,7 +1008,7 @@ header.fixed .logo a {
             }
             .review h2 {
                 font-size: 35px;
-                padding: 0 0 15px 0; /* 선까지의 여백 */
+                padding: 0 0 11px 0; /* 선까지의 여백 */
             }
             .review h2 strong::after {
                 bottom: -11px;
