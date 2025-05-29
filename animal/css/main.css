@@ -396,7 +396,7 @@ header.fixed .logo a {
 .find {
     background-color: #050835;
     color: #fff;
-    padding: 125px 0 140px 0;
+    margin: 125px 0 140px 0;
     position: relative; /* emblem 정렬의 기준 */
 }
 .find .tit h2 {
