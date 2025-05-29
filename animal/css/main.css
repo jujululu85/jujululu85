@@ -1011,7 +1011,7 @@ header.fixed .logo a {
                 padding: 0 0 13px 0; /* 선까지의 여백 */
             }
             .review h2 strong::after {
-                bottom: -10px;
+                bottom: -11px;
             }
             .review .list {
                 margin: 50px 0 0 0;
