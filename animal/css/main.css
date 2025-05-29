@@ -868,7 +868,7 @@ header.fixed .logo a {
     font-weight: 700;
     line-height: 1.2;
     color: #1d1d1d;
-    padding: 0 0 18px 0; /* 선까지의 여백 */
+    padding: 0 0 20px 0; /* 선까지의 여백 */
     position: relative; /* after를 기준으로 정렬 */
 }
 .review h2::after {
