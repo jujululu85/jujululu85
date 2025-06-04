@@ -1,0 +1,90 @@
+/* 모든페이지에 공통으로 들어가는 기본 스타일 */
+html, body {
+    font-family: "El Messiri", "Pretendard", sans-serif;
+    /* 앞에 쓴 서체를 적용하고 지원이 안되면 두번째 서체를 적용 */
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5; /* 배수 */
+    color: #555;
+    word-break: keep-all; /* 스페이스기준 단어별로 줄바꿈 */
+    word-wrap: break-word;
+    /* 단어가 너무 긴경우 강제로 줄바꿈을 주는 방법  */
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto; /* 가운데 */
+}
+#wrap {
+    position: relative; /* header 정렬의 기준 */
+    overflow-x: hidden; /* 가로스크롤 삭제 */
+    width: 100%;
+}
+@media screen and (max-width:1300px){ /* 20+20 = 40 + 1260 = 1300 */
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:768px){
+            /* 브라우저 넓이가 768px 이하에서만 작동 */
+            body {
+                font-size: 16px;
+            }
+}
+
+/* 글자를 숨겨야하는 경우 blind 클래스를 적용 */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    color: transparent;
+}
+.skip_nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000; /* 맨위 */
+    width: 100%;
+}
+.skip_nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #F56765;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    width: 100%;
+}
+.skip_nav a:focus {
+    top: 0;
+}
+
+/* css  변수 */
+:root {
+    --header-h: 100px; /* header 높이 */
+    --header-h-m: -100px; /* header 높이 마이너스값 */
+    --tit-color: #1d1d1d;
+    --base-color: #555;
+    --point-color: #AE040F;
+    --bold-weight: 700;
+    --tit-font-size: 2.65rem; /* 45px/17 = 2.65 */
+    --tit-line-height: 1.2;
+    --tit-ico: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 3.97237C0 4.11266 0.0196941 4.2554 0.0763165 4.38831C0.322501 4.99376 0.940425 5.3654 1.72821 5.05037C1.91778 4.97407 7.13688 2.87221 7.13688 2.87221C7.13688 2.87221 5.08124 8.08256 5.00492 8.277C4.70458 9.02274 5.06401 9.69957 5.67701 9.92846C5.81241 9.97768 5.95273 10.0023 6.09306 9.99983C6.59035 9.99737 7.03102 9.70203 7.2452 9.11626C7.27967 9.02766 9.84983 1.97142 9.90645 1.79913C9.93846 1.70069 10 1.46441 10 1.29951C10 0.950021 9.86952 0.620221 9.62088 0.37164C9.37469 0.125521 9.05219 0 8.70507 0C8.54013 0 8.40227 0.0295343 8.19547 0.0959866C8.07238 0.135366 1.4451 2.60148 0.878879 2.81314C0.310194 3.02481 0 3.47521 0 3.97237Z' fill='%23AE040F'/%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width:1024px){
+    :root {
+        --header-h: 56px; /* header 높이 */
+        --header-h-m: -56px;
+        --tit-font-size: 2.18rem; /* 37px/17 = 2.18 */
+    }
+}
+@media screen and (max-width:768px){
+    :root {
+        --tit-font-size: 1.88rem; /* 30px/16 = 1.88 */
+    }
+}
