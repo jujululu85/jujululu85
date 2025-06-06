@@ -51,6 +51,9 @@
 .visual .swiper-slide .txt_wrap .txt.delay2 p {
     transition-delay: 0.7s;
 }
+.visual .swiper-slide .txt_wrap .txt.delay3 p {
+    transition-delay: 0.9s;
+}
 .visual .swiper-slide.swiper-slide-active .txt_wrap .txt p {
     transform: translateY(0);
 }
