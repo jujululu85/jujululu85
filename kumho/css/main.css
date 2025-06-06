@@ -23,7 +23,7 @@
 .visual .swiper-slide .txt_wrap {
     position: absolute; /* swiper-slide를 기준으로 정렬 */
     left: 0;
-    bottom: 22.7%;
+    bottom: 26.6%;
     width: 100%;
 }
 .visual .swiper-slide .txt_wrap .txt.mobile {
@@ -35,7 +35,7 @@
 }
 .visual .swiper-slide .txt_wrap .txt p {
     color: #fff;
-    font-size: 4.12rem; /* 70/17 = 4.12 */
+    font-size: 3.53rem; /* 60/17 = 3.53 */
     line-height: 1;
     font-weight: var(--bold-weight);
     white-space: nowrap; /* 1줄로 표현 */
@@ -44,6 +44,12 @@
     /*transform: translateY(50%);  100% -> 0으로 애니메이션 */
     transition: 0.5s;
     transition-delay: 0.8s;
+}
+.visual .swiper-slide .txt_wrap .txt.delay1 p {
+    transition-delay: 0.5s;
+}
+.visual .swiper-slide .txt_wrap .txt.delay2 p {
+    transition-delay: 0.7s;
 }
 .visual .swiper-slide.swiper-slide-active .txt_wrap .txt p {
     transform: translateY(0);
