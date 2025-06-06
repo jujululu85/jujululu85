@@ -606,7 +606,7 @@ section .tit h2 {
     content: "";
     position: absolute;
     right: 1.18em;
-    top: 0.53em;
+    top: 0.54em;
     width: 0.59em;
     height: 0.59em;
     background-position: center center;
@@ -646,19 +646,19 @@ section .tit h2 {
                 left: 50%;
                 top: 0;
                 transform: translateX(-50%);
-                width: 8em;
+                width: 8.5em;
                 height: 1px;
             }
             .service .list ul li a {
                 display: inline-block;
                 margin: 0;
-                padding: 2.94em 0;
+                padding: 4.13em 0;
             }
             .service .list ul li a h3 {
-                font-size: 1.76rem;
+                font-size: 1.56rem;
                 font-weight: var(--bold-weight);
                 line-height: var(--tit-line-height);
-                margin: 0 0 0.5em 0;
+                margin: 0 0 0.75em 0;
             }
             .service .list ul li a .more {
                 display: inline-block;
@@ -669,8 +669,5 @@ section .tit h2 {
             .service .list ul li a .more::after {
                 right: 0;
                 top: 50%;
-                transform: translateY(-50%);
-                width: 0.44em;
-                height: 0.44em;
             }
 }
