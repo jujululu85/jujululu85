@@ -381,7 +381,7 @@ footer .top::after {
 footer .family_site .family_open {
     display: block;
     border: 1px solid rgba(255,255,255,0.5);
-    padding: 0.12em 3.06em 0 1.47em;
+    padding: 0.12em 3.06em 0.12em 1.47em;
     height: 1.76em;
     position: relative; /* after 기준의 정렬 */
 }
