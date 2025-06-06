@@ -448,8 +448,6 @@ footer .copyright {
             transform: translateY(-50%);
         }
         footer .top::after {
-            right:50%;
-            transform: translateX(50%);
             top: 0.41em;
         }
 }
