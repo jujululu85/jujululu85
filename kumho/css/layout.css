@@ -363,7 +363,7 @@ footer .top {
     top:  4em;
     background-color: var(--point-color);
     color: #fff;
-    padding: 0.12em 1.29em 0.12em 0.35em;
+    padding: 0.28em 1.29em 0.12em 0.35em;
 }
 footer .top::after {
     content: "";
@@ -448,7 +448,7 @@ footer .copyright {
             transform: translateY(-50%);
         }
         footer .top::after {
-            top: 0.41em;
+            top: 0.63em;
         }
 }
 @media screen and (max-width:1024px){
