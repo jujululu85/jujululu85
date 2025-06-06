@@ -667,7 +667,9 @@ section .tit h2 {
                 margin: 0;
             }
             .service .list ul li a .more::after {
-                right: 0;
-                top: 50%;
+                right: 0.13em;
+                top: 0.56em;
+                width: 0.44em;
+                height: 0.44em;
             }
 }
