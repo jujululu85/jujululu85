@@ -450,7 +450,7 @@ footer .copyright {
         footer .top::after {
             top: 0.63em;
         }
-}
+}/*@media*/
 @media screen and (max-width:1024px){
             footer .wrapper {
                 padding: 0.5em 1.5em 0.5em 1.5em;
@@ -465,4 +465,4 @@ footer .copyright {
                 width: 100%;
                 max-width: 300px;
             }
-}
+}/*@media*/
