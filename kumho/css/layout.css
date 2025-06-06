@@ -455,7 +455,7 @@ footer .copyright {
 }
 @media screen and (max-width:1024px){
             footer .wrapper {
-                padding: 0.12em 1.3em 0.12em 0.35em;
+                padding: 0.5em 1.5em 0.5em 1.5em;
                 display: block;
             }
             footer .family_site {
