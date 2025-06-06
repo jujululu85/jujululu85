@@ -348,10 +348,9 @@ header.menu_over .util .search .search_open::after {
 footer {
     background-color: #292929;
     color: rgba(255,255,255,0.8);
-    padding: 4em 0 5.82em 0;
 }
 footer .wrapper {
-    padding: 0.12em 1.3em 0.12em 0.35em;
+    padding: 4em 0 5.82em 0;
     position: relative; /* top버튼 정렬의 기준 */
     display: flex;
     flex-direction: row-reverse;
@@ -361,7 +360,7 @@ footer .wrapper {
 footer .top {
     position: absolute; /* wrapper 기준의 정렬 */
     right: -4.35em;
-    top: 0;
+    top:  4em;
     background-color: var(--point-color);
     color: #fff;
     padding: 0.12em 1.29em 0.12em 0.35em;
@@ -422,7 +421,7 @@ footer .f_nav ul li {
 }
 footer .f_nav ul li::after {
     content: "";
-    position: a;
+    position: absolute;
     right: -1.23em;
     top: 0.4em;
     width: 1px;
@@ -442,31 +441,30 @@ footer .f_info span {
 footer .copyright {
     color: rgba(255,255,255,0.6);
 }
-@media screen and (max-width:1440px){
-    footer .top {
-        right: 0;
-        top: 0;
-        transform: translateY(-50%);
-    }
-    footer .top::after {
-        right:50%;
-        transform: translateX(50%);
-        top: 0.41em;
-    }
+@media screen and (max-width:1480px){
+        footer .top {
+            right: 0;
+            top: 0;
+            transform: translateY(-50%);
+        }
+        footer .top::after {
+            right:50%;
+            transform: translateX(50%);
+            top: 0.41em;
+        }
 }
 @media screen and (max-width:1024px){
-    footer .wrapper {
-        padding: 0.12em 1.3em 0.12em 0.35em;
-        display: block;
-    }
-    footer .family_site {
-        position: relative; /* ul 정렬의 기준점 */
-        margin: 0 0 2em 0;
-    }
-    footer .family_site .family_open {
-        padding: 0.12em 3.06em 0 1.47em;
-        width: 100%;
-        max-width: 300px;
-    }
-    
+            footer .wrapper {
+                padding: 0.12em 1.3em 0.12em 0.35em;
+                display: block;
+            }
+            footer .family_site {
+                position: relative; /* ul 정렬의 기준점 */
+                margin: 0 0 2em 0;
+            }
+            footer .family_site .family_open {
+                padding: 0.12em 3.06em 0 1.47em;
+                width: 100%;
+                max-width: 300px;
+            }
 }
