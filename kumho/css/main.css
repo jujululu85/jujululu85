@@ -43,7 +43,6 @@
     transform: translateY(100%);
     /*transform: translateY(50%);  100% -> 0으로 애니메이션 */
     transition: 0.5s;
-    transition-delay: 0.8s;
 }
 .visual .swiper-slide .txt_wrap .txt.delay1 p {
     transition-delay: 0.5s;
@@ -60,15 +59,16 @@
 .visual .ctrl_wrap {
     position: absolute; /* visual을 기준으로 정렬 */
     left: calc(50% - 630px);
-    bottom: 18.8%;
+    bottom: 20.4%;
     z-index: 10;
     display: flex;
 }
 .visual .ctrl_wrap button {
     border: 1px solid #fff;
+    border-radius: 50%;
     border-left-width: 0;
-    width: 1.76em; /* 30/17=1.76 */
-    height: 1.76em;
+    width: 2.35em; /* 40/17 = 2.35 */
+    height: 2.35em;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -86,8 +86,8 @@
     position: absolute; /* visual을 기준으로 정렬 */
     /* left: 50%;
     transform: translateX(-50%); */
-    right: 20px;
-    bottom: 18.8%;
+    right: 30px;
+    bottom: 20.6%;
     z-index: 10;
     color: #fff;
     transform: rotate(90deg) translate(-50%, -50%);
@@ -96,17 +96,17 @@
     content: "";
     position: absolute;
     right: -0.8em;
-    top: 0.42em;
-    width: 0.3em;
+    top: 0.52em;
+    width: 0.6em;
     height: 0.5em;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("data:image/svg+xml,%3Csvg width='4' height='8' viewBox='0 0 4 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.665871 0.897173L3.88379 4.11509L0.665871 7.33301L0.192788 6.85992L2.93771 4.11509L0.192787 1.37026L0.665871 0.897173Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.47921 4.99992C5.47921 5.11103 5.46185 5.2152 5.42712 5.31242C5.3924 5.40964 5.33337 5.49992 5.25004 5.58325L1.41671 9.41659C1.26393 9.56936 1.06949 9.64575 0.833374 9.64575C0.597263 9.64575 0.402818 9.56936 0.250041 9.41659C0.0972629 9.26381 0.020874 9.06936 0.020874 8.83325C0.020874 8.59714 0.0972629 8.4027 0.250041 8.24992L3.50004 4.99992L0.250041 1.74992C0.0972629 1.59714 0.020874 1.4027 0.020874 1.16659C0.020874 0.930474 0.0972629 0.73603 0.250041 0.583252C0.402818 0.430474 0.597263 0.354085 0.833374 0.354085C1.06949 0.354085 1.26393 0.430474 1.41671 0.583252L5.25004 4.41659C5.33337 4.49992 5.3924 4.5902 5.42712 4.68742C5.46185 4.78464 5.47921 4.88881 5.47921 4.99992Z' fill='white'/%3E%3C/svg%3E ");
 
     animation-name: scroll_down;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;    
     animation-timing-function: linear;
 }
 @keyframes scroll_down {
@@ -125,7 +125,7 @@
                 transform: scale3d(1.05, 1.05, 1);
             }
             .visual .swiper-slide .txt_wrap {
-                bottom: 33%;
+                bottom: 27.14%;
             }
             .visual .swiper-slide .txt_wrap .txt.mobile {
                 display: block; /* 나타남 */
@@ -137,25 +137,15 @@
                 margin: 5px 0;
             }
             .visual .swiper-slide .txt_wrap .txt p {
-                font-size: 3rem; /* 40/16 = 2.5 */
+                font-size: 3rem; 
                 transition-delay: 0.6s;
             }
             .visual .ctrl_wrap {
-                bottom: 25.75%;
-            }
-            .visual .ctrl_wrap button {
-                border-left-width: 1px;
-                border-radius: 50%;
-            }
-            .visual .ctrl_wrap button.btn_prev {
-                display: none;
-            }
-            .visual .ctrl_wrap button.btn_next {
-                display: none;
+                bottom: 19.14%;
             }
             .visual .scroll_down {
                 right: 0;
-                bottom: 5%;
+                bottom: 7%;
             }
 }
 @media screen and (max-width:768px){
