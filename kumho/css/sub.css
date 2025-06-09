@@ -1,0 +1,141 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+@import url(layout.css);
+@import url(contents.css);
+
+/* 서브 레이아웃 요소(중복요소 - 페이지명까지) */
+.sub_visual {
+    height: 29.412em; /* 500px / 17 = 29.41 */
+    background: url(../images/sub/.sub_visual01.jpg) no-repeat center center / cover;
+    color: #fff;
+    text-align: center;
+    padding: 17.65em 0 0 0; /* 300 / 17 = 17.651 */
+}
+.sub_visual.bg1 {
+    background-image: url(../images/sub/sub_visual01.jpg);
+}
+.sub_visual.bg2 {
+    background-image: url(../images/sub/sub_visual02.jpg);
+}
+.sub_visual.bg3 {
+    background-image: url(../images/sub/sub_visual03.jpg);
+}
+.sub_visual.bg4 {
+    background-image: url(../images/sub/sub_visual04.jpg);
+}
+.sub_visual.bg5 {
+    background-image: url(../images/sub/sub_visual05.jpg);
+}
+.sub_visual .breadcrumb ol {
+    display: flex;
+    justify-content: center;
+    gap: 1.53em; /* 26 / 17 = 1.53 */
+}
+.sub_visual .breadcrumb ol li.home {
+    width: 0.94em;
+    height: 1.06em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 16V7C0 6.68333 0.0708333 6.38333 0.2125 6.1C0.354167 5.81667 0.55 5.58333 0.8 5.4L6.8 0.9C7.15 0.633333 7.55 0.5 8 0.5C8.45 0.5 8.85 0.633333 9.2 0.9L15.2 5.4C15.45 5.58333 15.6458 5.81667 15.7875 6.1C15.9292 6.38333 16 6.68333 16 7V16C16 16.55 15.8042 17.0208 15.4125 17.4125C15.0208 17.8042 14.55 18 14 18H11C10.7167 18 10.4792 17.9042 10.2875 17.7125C10.0958 17.5208 10 17.2833 10 17V12C10 11.7167 9.90417 11.4792 9.7125 11.2875C9.52083 11.0958 9.28333 11 9 11H7C6.71667 11 6.47917 11.0958 6.2875 11.2875C6.09583 11.4792 6 11.7167 6 12V17C6 17.2833 5.90417 17.5208 5.7125 17.7125C5.52083 17.9042 5.28333 18 5 18H2C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.sub_visual .breadcrumb ol li + li {
+    /* 첫번째 빼고 나머지 전부 */
+    position: relative; /* before 정렬의 기준 */
+}
+.sub_visual .breadcrumb ol li + li::before {
+    content: "'";
+    position: absolute;
+    left: -0.88em;
+    top: 0.24em;
+    width: 0.53em;
+    height: 0.94em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.06267 8.00065L0.937673 1.87565C0.72934 1.66732 0.628645 1.42079 0.63559 1.13607C0.642534 0.851346 0.750173 0.604818 0.958507 0.396484C1.16684 0.188151 1.41337 0.0839844 1.69809 0.0839844C1.98281 0.0839844 2.22934 0.188151 2.43767 0.396484L8.83351 6.81315C9.00017 6.97982 9.12517 7.16732 9.20851 7.37565C9.29184 7.58398 9.33351 7.79232 9.33351 8.00065C9.33351 8.20898 9.29184 8.41732 9.20851 8.62565C9.12517 8.83398 9.00017 9.02148 8.83351 9.18815L2.41684 15.6048C2.20851 15.8132 1.96545 15.9138 1.68767 15.9069C1.4099 15.9 1.16684 15.7923 0.958507 15.584C0.750173 15.3757 0.646007 15.1291 0.646007 14.8444C0.646007 14.5597 0.750173 14.3132 0.958507 14.1048L7.06267 8.00065Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.sub_visual .depth1_name {
+    font-size: 3.82rem;
+    font-weight: var(--bold-weight);
+    line-height: var(--tit-line-height);
+    margin: 0.53em 0 0 0;
+}
+
+@media screen and (max-width:1024px){
+    .sub_visual {
+        height: 26.25em; /* 420px / 16 = 30 */
+        padding: 16.13em 0 0 0; /* 258/ 16 = 17.44 */
+    }
+    .sub_visual .depth1_name {
+        font-size: 3rem;
+        margin: 0.31em 0 0 0;
+    }
+}
+@media screen and (max-width:768px){
+            .sub_visual .depth1_name {
+                font-size: 2.81rem;
+            }
+}
+.lnb {
+    background-color: var(--point-color);
+    color: #fff;
+}
+.lnb ul {
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden;/* 위아래 스크롤 바는 숨김 */
+    overflow-x: auto; /* 좌우 스크롤바 생성 */
+}
+.lnb ul li a {
+    display: block;
+    height: 3.53em;
+    line-height: 3.53em;
+    font-size: 1.18rem;
+    padding: 0 1.29em;
+}
+.lnb ul li.active a {
+    font-weight: var(--bold-weight);
+    position: relative; /* after 정렬의 기준 */
+}
+.lnb ul li.active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.29em;
+    background-color: #fff;
+}
+
+@media screen and (max-width:768px){
+            .lnb ul {
+                display: flex;
+                overflow-y: hidden;/* 위아래 스크롤 바는 숨김 */
+                overflow-x: auto; /* 좌우 스크롤바 생성 */
+            }
+            .lnb ul li a {
+                height: 3.13em;
+                line-height: 3.13em;
+                font-size: 1.06rem;
+                padding: 0 0.69em;
+            }
+}
+.page_tit {
+    margin: 3.41em 0  2.18em 0;
+    font-size: 2.94rem; 
+    font-weight: var(--bold-weight);
+    text-align: center;
+    color: var(--tit-color);
+}
+@media screen and (max-width:768px){ 
+    .page_tit {
+        margin: 4.19em 0 2.56em 0;
+        font-size: 2.19rem; /* 35/ 16 = 2.19 */
+    }
+}
+
+.contents {
+    min-height: 20em;
+}

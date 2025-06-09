@@ -1,0 +1,105 @@
+/* 회사소개 > CEO인사말 */
+
+.ctn_ceo {
+    position: relative;/* before 정렬의 기준 */
+}
+.ctn_ceo::before {
+    content: "";
+    position: absolute;
+    left: 3.53em;
+    top: 0;
+    z-index: -1; /* ctn_ceo 영역 안에서 맨 아래 */
+    width: calc(100% - 7.06em);
+    height: 21.18em;
+    background-color: #d9d9d9;
+    border-radius: 1.18em;
+}
+.ctn_ceo .wrapper {
+    position: relative; /* photo 정렬의 기준 */
+}
+.ctn_ceo .ceo_tit {
+    padding: 5.29em 0;
+}
+.ctn_ceo .ceo_tit strong {
+    display: block;
+    color: var(--point-color);
+}
+.ctn_ceo .ceo_tit h2 {
+    font-size: 1.76em;
+    color: var(--tit-color);
+    line-height: var(--tit-line-height);
+    font-weight: var(--bold-weight);
+    margin: 0.88em 0 1.24em 0;
+}
+.ctn_ceo .ceo_tit p {
+    color: #666;
+}
+.ctn_ceo .photo {
+    position: absolute;
+    left: 0;
+    top: 5.29em;
+    width: 32.06%m;
+    height: 39.29;
+    border-radius: 1.18em;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.05);
+}
+.ctn_ceo .photo img {
+    width: 100%;
+    height: 1005;
+    object-fit: cover;
+}
+.ctn_ceo .ceo_detail {
+    margin: 3.53em 0 4.7em 40.47%;
+}
+.ctn_ceo .ceo_detail .sign {
+    display: flex;
+    margin: 2em 0 0 0 ;
+    gap: 3em;
+    align-items: center;
+}
+.ctn_ceo .ceo_detail .sign strong {
+    font-weight: var(--bold-weight);
+}
+
+
+/* 회사소개 > 찾아오시는길 */
+.ctn_map .map {
+    position: relative;
+    left: calc(50% - 630px);
+    width: calc(50% + 630px);
+}
+.ctn_map .map iframe {
+    width: 100%;
+    height: 670px;
+    border: 0;
+}
+@media screen and (max-width:1300x){ 
+    .ctn_map .map {
+        left: 20px;
+        width: calc(50% + 20px);
+    }
+}
+
+.ctn_map .wrapper {
+    display: flex; 
+    justify-content: space-between;
+}
+.ctn_map .wrapper h2 {
+    font-size: 35px;
+    font-weight: var(--bold-weight);
+    color: var(--tit-color);
+    margin: 60px 0 36px 0;
+}
+.ctn_map .wrapper .button {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #1d1d1d;
+    text-align: center;
+    border: 1px solid #1d1d1d;
+    border-radius: 30%;
+    padding: 20px 20px 20px 0;
+
+}
