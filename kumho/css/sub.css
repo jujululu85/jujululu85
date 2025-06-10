@@ -108,7 +108,6 @@
     height: 0.29em;
     background-color: #fff;
 }
-
 @media screen and (max-width:768px){
             .lnb ul {
                 display: flex;
@@ -123,11 +122,16 @@
             }
 }
 .page_tit {
-    margin: 3.41em 0  2.18em 0;
+    margin: 2.7em 0  2em 0;
     font-size: 2.94rem; 
     font-weight: var(--bold-weight);
     text-align: center;
     color: var(--tit-color);
+}
+@media screen and (max-width:1024px){
+    .page_tit {
+        font-size: 2.53rem; /* 40/ 16 = 2.5 */
+    }
 }
 @media screen and (max-width:768px){ 
     .page_tit {
