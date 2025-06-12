@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    
+
+    //console.log($('.ctn_history').length)
+    if($('.ctn_history').length > 0){
     let scrolling // 브라우저가 스크롤 된 값
     let window_h //브라우저 높이
     let obj_name = $('.ctn_history .his_photo')
@@ -107,4 +109,5 @@ $(document).ready(function(){
 			}
 		});
 	}
-})
+    }//if
+})//$(document).ready
