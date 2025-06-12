@@ -183,7 +183,7 @@
                         <div class="regist">
                             <div class="item">
                                 <label for="category">상담분야</label>
-                                <select  id="category">
+                                <select  id="category" class="w70">
                                     <option>분야선택</option>
                                     <option>2번째 옵션</option>
                                     <option>3번재 옵션</option>
@@ -192,23 +192,29 @@
                             </div><!--//item-->
                             <div class="item">
                                 <label for="name">이름</label>
-                                <input type="text" id="name">
+                                <input type="text" id="name" class="w70">
                             </div><!--//item-->
                             <div class="item">
                                 <label for="subject">제목</label>
-                                <input type="text" id="subject">
+                                <input type="text" id="subject" class="w100">
                             </div><!--//item-->
                             <div class="item">
                                 <label for="memo">상담내용</label>
-                                <textarea id="memo"></textarea>
-                                <div class="item">
-                                    <label for="password">비밀번호</label>
-                                    <input type="password" id="password" placeholder="9 -12자 이내 영문+숫자 조합">
+                                <textarea id="memo" rows="7"  class="w100"></textarea>
+                            </div><!--//item-->
+                            <div class="item">
+                                <label for="password">비밀번호</label>
+                                <input type="password" id="password" placeholder="9 -12자 이내 영문+숫자 조합" class="w70">
+                            </div><!--//item-->
                         </div><!--//regist-->
                         <div class="btn_wrap">
-                            <button></button>
-                            <a></a>
-                            <input>
+                            <button class="cancel">취소</button>
+                            <!-- <a href="#" class="cancel">취소</a>
+                            <input type="button" class="cancel" value="취소">
+
+                            <button class="ok">신청하기</button>
+                            <a href="#" class="ok">신청하기</a> -->
+                            <input type="submit" class="ok" value="신청하기">
                         </div>
                     </fieldset>
                     </form>

@@ -487,3 +487,178 @@
             }
 }
 
+/* 홍보센터 - 금호뉴스 - 상담신청 */
+.ctn_notice {
+    margin: 2.12em 0 6.47em 0;
+}
+.ctn_notice h2 {
+    font-size: 2.06rem;
+    font-weight: var(--bold-weight);
+    color: var(--tit-color);
+    line-height: var(--tit-line-height);
+    margin-bottom: 1.47em;
+}
+.ctn_notice .agree_box {
+    border: 1px solid #ccc;
+    border-radius: 0.59em;
+    padding: 1.35em;
+    height: 14.94em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-break: normal;
+}
+.ctn_notice .agree_chk {
+    margin: 1.82em 0 3.59em 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.76em;
+}
+.ctn_notice .agree_chk .item input[type="radio"] {
+    display: none;
+}
+.ctn_notice .agree_chk .item label  {
+    position: relative; /* befoer 정렬의 기준 */
+    color: var(--tit-color);
+    font-size: 1.18rem;
+    padding-left: 1.3em;
+    cursor: pointer; /* 마우스 포인터 손바닥으로 */
+}
+.ctn_notice .agree_chk .item label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -0.15em;
+    width: 1em;
+    height: 1em;
+    border: 1px solid var(--base-color);
+    border-radius: 50%;
+}
+ /* 라디오가 체크되엇을때 label 디자인 */
+.ctn_notice .agree_chk .item input[type="radio"]:checked +  label::before {
+    border-color: var(--point-color);
+    background-color: var(--point-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.76324 6.73125L9.76637 0.728125C9.90804 0.586458 10.0733 0.515625 10.2622 0.515625C10.4511 0.515625 10.6164 0.586458 10.758 0.728125C10.8997 0.869792 10.9705 1.03802 10.9705 1.23281C10.9705 1.4276 10.8997 1.59583 10.758 1.7375L4.25908 8.25417C4.11741 8.39583 3.95213 8.46667 3.76324 8.46667C3.57436 8.46667 3.40908 8.39583 3.26741 8.25417L0.221578 5.20833C0.0799115 5.06667 0.0120295 4.89844 0.0179323 4.70365C0.0238351 4.50885 0.0976198 4.34063 0.239286 4.19896C0.380953 4.05729 0.549182 3.98646 0.743974 3.98646C0.938766 3.98646 1.10699 4.05729 1.24866 4.19896L3.76324 6.73125Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ctn_notice .regist {
+    border-top: 2px solid var(--base-color);
+}
+.ctn_notice .regist .item {
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    gap: 1.82em;
+}
+.ctn_notice .regist .item label {
+    max-width: 9.73em;
+    width: 25%;
+    font-size: 1.29rem;
+    font-weight: var(--bold-weight);
+    line-height: var(--tit-line-height);
+    color: var(--tit-color);
+    text-align: center;
+    background-color: #EDF2F6;
+    padding: 1.05em 0 0 0;
+}
+.ctn_notice .regist .item select,
+.ctn_notice .regist .item input,
+.ctn_notice .regist .item textarea {
+    margin: 1.06em 0;
+    border: 1px solid var(--base-color);
+    border-radius: 0.41em;
+    min-height: 2.94em;
+    background-color: #F4F4F4;
+    padding: 0.5em 1em;
+}
+.ctn_notice .regist .item .w100 {
+    min-width: calc(100% - 17.65em);
+    width: calc(75% - 4.5em);
+}
+.ctn_notice .regist .item .w70 {
+    max-width: 37.65em;
+    width: calc(75% - 4.5em);
+}
+.ctn_notice .regist .item textarea {
+    resize: none;
+}
+.ctn_notice .regist .item input::placeholder {
+    color: #767676;
+}
+.ctn_notice .btn_wrap {
+    margin: 2.47em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.ctn_notice .btn_wrap .cancel,
+.ctn_notice .btn_wrap .ok {
+    width: 9.5em;
+    height: 2.5em;
+    text-align: center;
+    border-radius: 0.4em;
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: var(--bold-weight);
+    padding: 0.25em 0 0 0;
+    line-height: calc(2.5em - 0.25em);
+}
+.ctn_notice .btn_wrap .cancel {
+    background-color: #888888;
+}
+.ctn_notice .btn_wrap .ok {
+    background-color: var(--point-color);
+}
+
+@media screen and (max-width:768px){
+        .ctn_notice h2 {
+            font-size: 1.56rem;
+        }
+        .ctn_notice .agree_box {
+            border-radius: 0.31em;
+            height: 15.38em;
+        }
+        .ctn_notice .agree_chk {
+            margin: 0.81em 0 2.94em 0;
+            gap: 1.06em;
+        }
+        .ctn_notice .agree_chk .item label  {
+            font-size: 1.125rem;
+        }
+        .ctn_notice .regist .item {
+            border-bottom: 0;
+            display: block;
+        }
+        .ctn_notice .regist .item label {
+            max-width: none;
+            width: auto;
+            display: block;
+            font-size: 1.25rem;
+            text-align: left;
+            background-color: transparent;
+            padding: 1em 0 0.39em 0;
+        }
+        .ctn_notice .regist .item select,
+        .ctn_notice .regist .item input,
+        .ctn_notice .regist .item textarea {
+            margin: 0;
+            min-height: 2.38em;
+        }
+        .ctn_notice .regist .item .w100 {
+            min-width: 100%;
+            width: 100%
+        }
+        .ctn_notice .regist .item .w70 {
+            max-width: 100%;
+            width: 100%;
+        }
+        .ctn_notice .btn_wrap {
+            margin: 1.56em 0 0 0;
+        }
+        .ctn_notice .btn_wrap .cancel,
+        .ctn_notice .btn_wrap .ok {
+            width: 5.65em;
+            height: 2.24em;
+            font-size: 1.06rem;
+            padding: 0.25em 0 0 0;
+            line-height: calc(2.24em - 0.25em);
+        }
+}
