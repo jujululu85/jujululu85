@@ -74,19 +74,22 @@ html, body {
     --point-color: #083147;
     --bold-weight: 700;
     --tit-size: 2.65rem; /* 45px/17 = 2.65 */
-    --sub-tit-size: 1.94rem; /* 33px/17 = 1.94 */
     --tit-line-height: 1.2;
+    --sub-tit-size: 1.94rem; /* 33px/17 = 1.94 */
+    --display-size: 3.53rem; /* 60/17 = 3.53*/
 }
 @media screen and (max-width:1024px){
     :root {
         --header-h: 56px; /* header 높이 */
         --header-h-m: -56px;
         --tit-size: 2.18rem; /* 37px/17 = 2.18 */
+        --display-size: 2.65rem; /* 45/16 = 2.65*/
     }
 }
 @media screen and (max-width:768px){
     :root {
         --tit-size: 2.06em; /* 33px/16 = 2.06*/
         --sub-tit-size: 1.44rem; /* 23px/16 = 1.44 */
+        --display-size: 2.188rem; /* 35/16 = 2.188*/
     }
 }
