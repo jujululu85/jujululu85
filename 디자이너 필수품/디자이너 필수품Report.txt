@@ -1,0 +1,31 @@
+Report created: 
+	2025-06-19	오후 9:13:07
+
+Project name: 디자이너 필수품.aep
+
+Source files collected to: 
+	X:\디자이너 필수품 folder
+
+Source files collected: All
+
+Collected comps:  
+	03_디자이너 필수품
+	
+Number of collected files:  2
+
+Size of collected files:  33.3 MB
+
+Collected source files: 
+	C:\Users\501\Desktop\영상편집_수업자료\애프터이펙트\01_기본 애니메이션\디자이너 필수품\pexels-mikael-blomkvist-6558616 (2160p).mp4
+	D:\문미영 - 영상\250619\03_디자이너 필수품.psd
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  2
+
+Effect:  Gaussian Blur
+	
+Effect:  Lumetri Color
+	
+
