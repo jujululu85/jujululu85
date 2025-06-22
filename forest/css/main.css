@@ -165,7 +165,6 @@
     font-size: 40px;
 }
 .tree .tit {
-    border: 1px solid red;
     width: 40%;
 }
 .tree .tree_ani {
@@ -173,7 +172,7 @@
     max-width: 627px; 
     width: calc(100% - 390px);
     width: 58%;
-    border: 1px solid red;
+    margin: 10% 0 0 0;
 }
 .tree .tree_ani .img_tree {
     width: 83.25%;
@@ -186,37 +185,59 @@
     bottom: 22%;
     z-index: 3;
     width: 43.22%;
-    animation-name: tree_left;
-    animation-duration: 5s;
-    animation-iteration-count: infinite; /* 무한반복 */
-    animation-timing-function: linear; /* 가속도 삭제 */
+    animation: tree_top 5s linear infinite;
 }
 .tree .tree_ani .img_cloud2 {
     position: absolute;
+    width: 36.20%;
     right: 5%;
     top: 2%;
     z-index: 5;
-    width: 36.20%;
+    animation: tree_left 7s linear infinite;
 }
 .tree .tree_ani .img_sun {
     position: absolute;
+    width: 23.76%;
     right: 0%;
     top: -9%;
-    width: 23.76%;
     z-index: 4;
+    animation: tree_rotate 7s linear infinite;
 }
 .tree .tree_ani .img_leaf {
     position: absolute;
+    width: 11.16%;
     right: 21%;
     bottom: 11%;
-    width: 11.16%;
     z-index: 1;
+    animation: tree_leaf 5s linear infinite;
 }
 @keyframes tree_left {
     /* 왔다갔다하는 반복되는 애니메이션은 0%, 100% 같아야함 */
-    0% { transform: translateX(0); }
-    50% { transform: translateX(100px); }
-    100% { transform: translateX(0); }
+    0% { transform: translateX(8%); }
+    50% { transform: translateX(-8%); }
+    100% { transform: translateX(8%); }
+}
+@keyframes tree_size {
+    /* 왔다갔다하는 반복되는 애니메이션은 0%, 100% 같아야함 */
+    0% { transform: scale(100%) translate(0, 0); opacity: 1;}
+    50% { transform: scale(95%) translate(-10%, 10%); opacity: 0.9;}
+    100% { transform: scale(100%) translate(0, 0); opacity: 1;}
+}
+@keyframes tree_top {
+    /* 왔다갔다하는 반복되는 애니메이션은 0%, 100% 같아야함 */
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10%); }
+    100% { transform: translateY(0); }
+}
+@keyframes tree_rotate {
+    /* 왔다갔다하는 반복되는 애니메이션은 0%, 100% 같아야함 */
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes tree_leaf {
+    0% { transform: scale(100%) translate(0, 0); }
+    50% { transform: scale(80%) translate(-10%, 10%); }
+    100% { transform: scale(100%) translate(0, 0); }
 }
 
 

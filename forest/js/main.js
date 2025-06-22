@@ -21,8 +21,10 @@ $(document).ready(function(){
 				//console.log('1번째 슬라이드가 로딩 되었을때');
 				$('body').removeClass('bg_white')
 			}else if(destination.index == 1){ /* index가 1이면 슬라이드는 두번째 슬라이드입니다. index 수는 0/1/2/3 */
-				//console.log('2번째 슬라이드가 로딩 되었을때');
+				//console.log('2번째 슬라이드가 로딩 되었을때');				
 				$('body').addClass('bg_white')
+				/************* tree 숫자가 넘어가는 애니메이션 ***********/
+				$('.counter').counterUp();
 			}else if(destination.index == 2){ /* index가 2이면 슬라이드는 세번째 슬라이드입니다. index 수는 0/1/2/3 */
 				//console.log('3번째 슬라이드가 로딩 되었을때');
 				$('body').removeClass('bg_white')
@@ -84,7 +86,6 @@ $(document).ready(function(){
 
 });
 
-/****************** tree 숫자가 넘어가는 애니메이션 **************************/
-$('.counter').counterUp();
+
 	
 })//$(document).ready
