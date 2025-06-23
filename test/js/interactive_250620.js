@@ -37,11 +37,11 @@ $(document).ready(function(){
         }else if(photo_end > scrolling){
             //console.log('애니메이션 중')
             photo_w = ((photo_w_end - photo_w_start) / 100 * photo_scroll) + photo_w_start
-            console.log(photo_w)
+            //console.log(photo_w)
             photo.width(photo_w + '%')
         }else {
             //console.log('종료')
-            photo.width(photo_w_end, + '%')
+            photo.width(photo_w_end + '%')
         }
     }//photo_resize
 
