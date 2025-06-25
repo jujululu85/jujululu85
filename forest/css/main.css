@@ -239,6 +239,33 @@
     50% { transform: scale(80%) translate(-10%, 10%); }
     100% { transform: scale(100%) translate(0, 0); }
 }
+@media screen and (max-width:768px){
+        .tree {
+            margin: 76px 0 68px 0;
+            text-align: center;
+        }
+        .tree .wrapper {
+            display: block;
+        }
+        .tree .tit h2 {
+            font-size: 45px;
+        }
+        .tree .tit h2 strong::after {
+            right: -15px;
+            font-size: 25px;
+        }
+        .tree .tit p br {
+            display: none; /* 줄바꿈 삭제 */
+        }
+        .tree .tit {
+            width: auto;
+        }
+        .tree .tree_ani {
+            max-width: 400px; 
+            width: 80%;
+            margin: 38px auto 0 auto;
+        }
+}/*@media*/
 
 
 #fp-nav.fp-left {
