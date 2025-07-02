@@ -130,12 +130,12 @@
     min-height: 100%;
 }
 .visual .scroll_wrap {
-    position: absolute; /* visual을 기준으로 정렬 */
-    /* left: 50%;
-    transform: translateX(-50%); */
-    right: 50px;
+    position: absolute;
+    right: 5%;
     bottom: 1%;
     z-index: 10;
+	font-size: 15px;
+	color: #fff;
 }
 .visual .scroll_down {
     display: inline-block;
@@ -143,6 +143,7 @@
     overflow: hidden;
     width: 1px;
     height: 90px;
+    color: #fff;
     background: rgba(255, 255, 255, 0.3);
 }
 .visual .scroll_down::after {
@@ -152,7 +153,11 @@
     height: 20px;
     background: #fff;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    animation: scroll 1.4s infinite ease;
+    animation: scroll_down 1.4s infinite ease;
+}
+@keyframes scroll_down{
+	0%{transform:translateY(0);}
+	100%{transform:translateY(150%);}
 }
