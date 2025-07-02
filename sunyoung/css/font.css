@@ -1,17 +1,17 @@
 /* 웹폰트를 선언 */
 
 @font-face {
-	font-family: 'Paperlogy';
-	font-weight: 700;
+	font-family: 'SUIT-ExtraBold';
+	font-weight: 800;
 	font-display: swap;
-	src: local('Paperlogy 7Bold'), 
-	url(../font/Paperlogy-7Bold.woff2) format('woff2');
+	src: local('SUIT ExtraBold'), 
+	url(../font/SUIT-ExtraBold\ \(1\).woff2) format('woff2');
 }
 
 @font-face {
-	font-family: 'Paperlogy';
+	font-family: 'SUIT-Regular';
 	font-weight: 400;
 	font-display: swap;
-	src: local('Paperlogy 4Regular'), 
-	url(../font/Paperlogy-4Regular.woff2) format('woff2');
+	src: local('SUIT Regular'), 
+	url(../font/SUIT-Regular\ \(1\).woff2) format('woff2');
 }

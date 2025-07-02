@@ -1,6 +1,6 @@
 /* 모든페이지에 공통으로 들어가는 기본 스타일 */
 html, body {
-    font-family: "Paperlogy", sans-serif;
+    font-family: "SUIT-Regular", sans-serif;
     /* 앞에 쓴 서체를 적용하고 지원이 안되면 두번째 서체를 적용 */
     font-size: 17px;
     font-weight: 400;
@@ -60,7 +60,7 @@ html, body {
     display: block;
     text-align: center;
     padding: 10px 0;
-    background-color: #F56765;
+    background-color: #00291B;
     color: #fff;
     position: absolute;
     left: 0;
@@ -77,12 +77,12 @@ html, body {
     --header-h-m: -100px; /* header 높이 마이너스값 */
     --tit-color: #1d1d1d;
     --base-color: #555;
-    --main-color: #179615;
-    --point-color: #083147;
-    --bold-weight: 700;
+    --main-color: #00291B;
+    --point-color: #8A6440;
+    --bold-weight: 800;
     --tit-size: 2.65rem; /* 45px/17 = 2.65 */
     --tit-line-height: 1.2;
-    --sub-tit-size: 1.94rem; /* 33px/17 = 1.94 */
+    --sub-tit-size: 2.06rem; /* 35px/17 = 1.94 */
     --display-size: 3.53rem; /* 60/17 = 3.53*/
 }
 @media screen and (max-width:1024px){
