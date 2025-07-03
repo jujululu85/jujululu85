@@ -19,3 +19,42 @@ header .logo a {
     height: 34px;
     background: url(../images/common/logo_w.png) no-repeat center center / contain;
 }
+header .util {
+    display: flex;
+    gap: 35px;
+}
+header .util .lang .lang_open {
+    padding: 0 0 0 4px;
+    position: relative; /* before 정렬의 기준 */
+}
+header .util .lang .lang_open::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 9px;
+    height: 6px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.0001 5.2311C4.9001 5.2311 4.80635 5.21548 4.71885 5.18423C4.63135 5.15298 4.5501 5.09985 4.4751 5.02485L1.0251 1.57485C0.887598 1.43735 0.818848 1.26235 0.818848 1.04985C0.818848 0.837354 0.887598 0.662354 1.0251 0.524854C1.1626 0.387354 1.3376 0.318604 1.5501 0.318604C1.7626 0.318604 1.9376 0.387354 2.0751 0.524854L5.0001 3.44985L7.9251 0.524854C8.0626 0.387354 8.2376 0.318604 8.4501 0.318604C8.6626 0.318604 8.8376 0.387354 8.9751 0.524854C9.1126 0.662354 9.18135 0.837354 9.18135 1.04985C9.18135 1.26235 9.1126 1.43735 8.9751 1.57485L5.5251 5.02485C5.4501 5.09985 5.36885 5.15298 5.28135 5.18423C5.19385 5.21548 5.1001 5.2311 5.0001 5.2311Z' fill='%23555555'/%3E%3C/svg%3E ");
+}
+header .gnb .gnb_util,
+header .gnb .gnb_open,
+header .gnb .gnb_close {
+    display: none; 
+}
+header .gnb .gnb_wrap ul.depth1 {
+    display: flex;
+}
+header .gnb .gnb_wrap ul.depth1 > li {
+    width: 110px;
+    text-align: center;
+    position: relative; /* depth2 정렬의 기준 */
+}
+header .gnb .gnb_wrap ul.depth1 > li > a {
+    display: block;
+    line-height: var(--tit-line-height);
+    font-size: 18px;
+    font-weight: var(--bold-weight);
+}
