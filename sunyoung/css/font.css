@@ -1,17 +1,19 @@
 /* 웹폰트를 선언 */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @font-face {
-	font-family: 'SUIT-ExtraBold';
-	font-weight: 800;
+	font-family: 'Noto Sans KR-Bold';
+	font-style: normal;
+	font-weight: 700;
 	font-display: swap;
-	src: local('SUIT ExtraBold'), 
-	url(../font/SUIT-ExtraBold\ \(1\).woff2) format('woff2');
+	src: local('Noto Sans KR Bold'), 
+	url('../font/NotoSansKR-Bold.ttf') format('woff2');
 }
 
 @font-face {
-	font-family: 'SUIT-Regular';
+	font-family: 'Noto Sans KR-Regular';
+	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: local('SUIT Regular'), 
-	url(../font/SUIT-Regular\ \(1\).woff2) format('woff2');
+	src: local('Noto Sans KR Regular'), 
+	url('../font/NotoSansKR-Regular.ttf') format('woff2');
 }

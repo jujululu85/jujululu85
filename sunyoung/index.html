@@ -12,59 +12,65 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
     <script src="js/common.jsf"></script>
-    <title> Sunyoung Design company</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Sunyoung Design company</title>
 </head>
 <body>
     <header>
-        <h1 class="logo"><a href="index.html"><span class="blind">선영디자인컴퍼니</span></a></h1>
-        <nav class="gnb">
-            <button class="gnb_open"><span>메뉴열기</span></button>
-            <div class="gnb_wrap">
-                <div class="gnb_util">
-                    <div class="lang">
-                        <button class="lang_open"><span>KOR</span></button>
-                    </div>
-                </div>
-                <ul class="depth1">
-                    <li>
-                        <a href="#"><span>회사소개</span></a>
-                        <ul class="depth2">
-                            <li><a href="#"><span>회사소개</span></a></li>
-                            <li><a href="#"><span>사업분야</span></a></li>
-                            <li><a href="#"><span>회사실적</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>포트폴리오</span></a>
-                        <ul class="depth2">
-                            <li><a href="#"><span>호텔</span></a></li>
-                            <li><a href="#"><span>주거공간</span></a></li>
-                            <li><a href="#"><span>상업공간</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>상담문의</span></a>
-                        <ul class="depth2">
-                            <li><a href="#"><span>문의하기</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>오시는길</span></a>
-                        <ul class="depth2">
-                            <li><a href="#"><span>오시는길</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <button class="gnb_close"><span>메뉴닫기</span></button>
-            </div><!--//gnb_wrap--> 
-            <div class="gnb_bg"></div>
-        </nav>
-        <div class="util">
-            <div class="lang">
-                <button class="lang_open"><span>KOR</span></button>
+        <div class="logo"><a href="index.html"><span class="blind">선영디자인컴퍼니</span></a></div>
+        <nav>
+            <ul>
+                <li><a class="menu-open">회사소개</a></li>
+                <li><a class="menu-open">포트폴리오</a></li>
+                <li><a class="menu-open">상담문의</a></li>
+                <li><a class="menu-open">오시는길</a></li>
+            </ul>
+            <div class="lang-select"><span>KOR</span></div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
             </div>
-        </div><!--//util-->
+        </nav>
     </header>
+    <div class="fullscreen-menu">
+        <div class="menu-inner">
+            <div class="close-btn">✕</div>
+            <div class="menu-block">
+                <h2>회사소개</h2>
+                <div class="submenu">
+                    <a href="#">회사소개</a>
+                    <a href="#">사업분야</a>
+                    <a href="#">회사실적</a>
+                </div>
+            </div>
+            <div class="menu-block">
+                <h2>포트폴리오</h2>
+                <div class="submenu">
+                    <a href="#">호텔</a>
+                    <a href="#">주거공간</a>
+                    <a href="#">상업공간</a>
+                </div>
+            </div>
+            <div class="menu-block">
+                <h2>상담문의</h2>
+                <div class="submenu">
+                    <a href="#">문의하기</a>
+                </div>
+            </div>
+            <div class="menu-block">
+                <h2>오시는길</h2>
+                <div class="company-info">
+                    <p>Company : (주)선영디자인컴퍼니</p>
+                    <p>Tel : 1588-7318</p>
+                    <p>E-mail : support@sunyoungdc.com</p>
+                    <p>Address : 청주시 흥덕구 강호로 194번길 57-17</p>
+                </div>
+            </div>
+            <div class="bottom-text">
+                <strong>감성을 <em>더하다, <br>Refined </em>Design</strong><br>
+                <strong>Sunyoung <em>Design company</em></strong>
+            </div>
+        </div>
+    </div>
     <main class="container">
         <section class="visual">
             <div class="wrapper">
