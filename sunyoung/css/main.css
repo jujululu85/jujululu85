@@ -132,19 +132,18 @@
 .visual .scroll_wrap {
     position: absolute;
     right: 50px;
-    bottom: 10px;
+    bottom: 0;
     z-index: 10;
-	font-size: 15px;
 	color: #fff;
     transform-origin: right bottom;
-    transform: rotate(90deg);
+    transform: rotate(90deg);    
+	font-size: 15px;
     line-height: 1.5;
     display: flex;
     align-items: center;
 }
 .visual .scroll_down {
     position: relative;
-    overflow: hidden;
     width: 90px;
     height: 2px;
     color: #fff;
@@ -162,9 +161,125 @@
     animation: scroll_down 1.4s infinite linear;
 }
 @keyframes scroll_down{
-	0%{transform:translateY(0);}
-	100%{transform:translateY(150%);}
+	0%{transform:translateX(0);}
+	100%{transform:translateX(400%);}
 }
+
+
+.fullscreen-menu { 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:900px; 
+    background:#fff; 
+    color:#1d1d1d; 
+    display:none; 
+    z-index:999; 
+    padding:60px 80px; 
+    overflow-y:auto; 
+}
+.fullscreen-menu .logo {
+    margin: 33px 0 0 25px;
+}
+.fullscreen-menu .logo a {
+    display: block;
+    width: 260px;
+    height: 34px;
+    background: url(../images/common/logo.png) no-repeat center center / contain;
+}
+.fullscreen-menu .util {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+}
+.fullscreen-menu .util .lang .lang_open {
+    padding: 0 0 0 6px;
+    position: relative; /* before 정렬의 기준 */
+}
+.fullscreen-menu .util .lang .lang_open::before {
+    content: "";
+    position: absolute;
+    left: 42px;
+    top: 10px;
+    width: 25px;
+    height: 7px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.0001 5.2311C4.9001 5.2311 4.80635 5.21548 4.71885 5.18423C4.63135 5.15298 4.5501 5.09985 4.4751 5.02485L1.0251 1.57485C0.887598 1.43735 0.818848 1.26235 0.818848 1.04985C0.818848 0.837354 0.887598 0.662354 1.0251 0.524854C1.1626 0.387354 1.3376 0.318604 1.5501 0.318604C1.7626 0.318604 1.9376 0.387354 2.0751 0.524854L5.0001 3.44985L7.9251 0.524854C8.0626 0.387354 8.2376 0.318604 8.4501 0.318604C8.6626 0.318604 8.8376 0.387354 8.9751 0.524854C9.1126 0.662354 9.18135 0.837354 9.18135 1.04985C9.18135 1.26235 9.1126 1.43735 8.9751 1.57485L5.5251 5.02485C5.4501 5.09985 5.36885 5.15298 5.28135 5.18423C5.19385 5.21548 5.1001 5.2311 5.0001 5.2311Z' fill='%23555555'/%3E%3C/svg%3E ");
+}
+.fullscreen-menu .menu-inner { 
+    max-width:1260px; 
+    margin:0 auto; 
+}
+.fullscreen-menu .menu-inner .menu-block { 
+    border-bottom:1px solid #ccc; 
+    padding:40px 0; 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    flex-wrap:wrap; 
+}
+.fullscreen-menu .menu-inner .menu-block:last-child {
+    display: none;
+}
+.fullscreen-menu .menu-block h2 { 
+    font-size:45px; 
+    font-weight:bold; 
+    color:#1d1d1d; 
+    margin-bottom:15px; 
+    min-width:150px; 
+}
+.fullscreen-menu .submenu a { 
+    margin-right:30px; 
+    color:#555;
+    text-decoration: none;
+    font-size:22px; 
+    transition:color 0.3s; 
+}
+.fullscreen-menu .submenu a:hover { 
+    font-weight: var(--bold-weight);
+}
+.fullscreen-menu .info {
+    display: flex;
+    justify-content: space-between;
+}
+.fullscreen-menu .company-info p { 
+    font-size:17px; 
+    color:#555; 
+    margin:50px 0; 
+}
+.fullscreen-menu .bottom-text {
+    text-align: end;
+    margin-top: 50px;
+}
+.fullscreen-menu .bottom-text strong {
+    font-size:30px; 
+    color:#1d1d1d; 
+    line-height:var(--tit-line-height);
+    font-weight: var(--bold-weight); 
+}
+.fullscreen-menu .bottom-text span {
+    color: #666;
+}
+.fullscreen-menu .bottom-text em {  
+    color: #1d1d1d;
+    font-weight: 400;
+}
+.fullscreen-menu .close-btn { 
+    position:absolute; 
+    top:40px; 
+    right:50px; 
+    font-size:28px; 
+    cursor:pointer; 
+    color:#1d1d1d; 
+    transition:transform 0.3s; 
+}
+.fullscreen-menu .close-btn:hover { 
+    transform:rotate(90deg); 
+}
+
 
 .quick {
     position: fixed;
