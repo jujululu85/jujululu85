@@ -95,7 +95,7 @@
         }
     }/*@media*/
 @keyframes visual_paging {
-    0% { width:0; }
+    0% { width: 0; }
     100% { width: 100%; }
 }
 @media screen and (max-width:768px){

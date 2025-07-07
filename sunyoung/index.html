@@ -9,9 +9,6 @@
     <script src="js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
@@ -20,18 +17,10 @@
 </head>
 <body>
     <header>
+        <div class="inner">
         <h1 class="logo"><a href="index.html"><span class="blind">선영디자인컴퍼니</span></a></h1>
         <nav class="gnb">
-            <button class="gnb_open"><span>메뉴열기</span></button>
             <div class="gnb_wrap">
-                <div class="gnb_util">
-                    <div class="lang">
-                        <button class="lang_open"><span>KOR</span></button>
-                    </div>
-                    <div class="hamburger">
-                        <button class="hamburger_open"><span class="blind">메뉴</span></button>                        
-                    </div>
-                </div>
                 <ul class="depth1">
                     <li>
                         <a href="#"><span>회사소개</span></a>
@@ -62,10 +51,9 @@
                         </ul>
                     </li>
                 </ul>
-                <button class="gnb_close"><span>메뉴닫기</span></button>
             </div><!--//gnb_wrap--> 
-            <div class="gnb_bg"></div>
         </nav>
+        </div>
         <div class="util">
             <div class="lang">
                 <button class="lang_open"><span>KOR</span></button>
@@ -128,81 +116,46 @@
                 </div>
             </div>
         </div>
-        
     </div>
     <main class="container">
         <section class="visual">
-            <div class="wrapper">
-                <div class="inner">
-                    <article class="txt_wrap animate-element fadelnUp start-animate animated">
-                        <h2>인테리어, <br> 고민하고 계신가요?</h2>
-                        <p>한번의 신청으로 맞춤 인테리어 상담!</p>
-                        <div id="visual_ctrl" class="dots_wrap">
-                            <ul id="visual_dots_list" class="dots_list">
-                                <li class="dots_item" data-idx="0">
-                                    <button type="button" class="visual_dots">0</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="txt_wrap animate-element fadelnUp start-animate animated">
-                        <h2>100% 맞춤 인테리어</h2>
-                        <p>인테리어 시공부터 가구제작까지 선영디자인컴퍼니가 함께합니다.</p>
-                        <div id="visual_ctrl" class="dots_wrap">
-                            <ul id="visual_dots_list" class="dots_list">
-                                <li class="dots_item" data-idx="1">
-                                    <button type="button" class="visual_dots">1</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="txt_wrap animate-element fadelnUp start-animate animated">
-                        <h2>선영디자인컴퍼니는 <br>“이런 회사 ” 입니다.</h2>
-                        <p>고객의 신뢰와 만족을 최우선으로 거품없는 실견적을 제공 </p>
-                        <div id="visual_ctrl" class="dots_wrap">
-                            <ul id="visual_dots_list" class="dots_list">
-                                <li class="dots_item" data-idx="2">
-                                    <button type="button" class="visual_dots">2</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="txt_wrap animate-element fadelnUp start-animate animated">
-                        <h2>주거. 오피스. 상업. <br>모든 공간을 Interior</h2>
-                        <p>다양한 포트폴리오를 통한 최신 트랜드를 만나보세요.</p>
-                        <div id="visual_ctrl" class="dots_wrap">
-                            <ul id="visual_dots_list" class="dots_list">
-                                <li class="dots_item" data-idx="3">
-                                    <button type="button" class="visual_dots">3</button>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <div class="slider_wrap">
-                        <ul id="visual" class="visual_slider slick-initialized slick-slider" data-autoplay="1" data-autoplayspeed="50000" data-infinite="1" data-speed="1200">
-                            <div class="slick_list draggable">
-                                <div class="slick_track">
-                                    <li class="visual_slide slick-slide">
-                                        <div class="visual_img_wrap"><img src="images/main/visual01.jpg"  class=visual_img alt=""></div>
-                                    </li>
-                                    <li class="visual_slide slick-slide">
-                                        <div class="visual_img_wrap"><img src="images/main/visual02.jpg" class=visual_img alt=""></div>
-                                    </li>
-                                    <li class="visual_slide slick-slide">
-                                        <div class="visual_img_wrap"><img src="images/main/visual03.jpg" class=visual_img alt=""></div>
-                                    </li>
-                                    <li class="visual_slide slick-slide">
-                                        <div class="visual_img_wrap"><img src="images/main/visual04.jpg" class=visual_img alt=""></div>
-                                    </li>
-                                </div>
+            <h2 class="blind">팝업</h2>
+            <div class="visual_wrap">
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual01.jpg" alt="인테리어그림"></div>
+                            <div class="visual_txt">
+                                <h2>인테리어, <br>고민하고 계신가요?</h2>
+                                <p>한번의 신청으로 맞춤 인테리어 상담!</p>
                             </div>
-                        </ul>
-                    </div>
-                </div> 
-            </div><!--//visual_wrap-->
-            <div class="scroll_wrap">
-                <div class="scroll_down"><span>scroll down</span></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual02.jpg" alt="인테리어그림"></div>
+                            <div class="visual_txt">
+                                <h2>100% <br>맞춤 인테리어</h2>
+                                <p>인테리어 시공부터 가구제작까지 선영디자인컴퍼니가 함께합니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual03.jpg" alt="인테리어그림"></div>
+                            <div class="visual_txt">
+                                <h2>선영디자인컴퍼니는 <br>“이런 회사 ” 입니다.</h2>
+                                <p>고객의 신뢰와 만족을 최우선으로 거품없는 실견적을 제공</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="photo"><img src="images/main/visual04.jpg" alt="인테리어그림"></div>
+                            <div class="visual_txt">
+                                <h2>주거. 오피스. 상업. <br>모든 공간을 Interior</h2>
+                                <p>다양한 포트폴리오를 통한 최신 트랜드를 만나보세요.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                </div>
             </div>
+            <div class="scroll_down"><span>scroll down</span></div>
         </section>
         <section class="story"></section>
         <section class="Design"></section>
