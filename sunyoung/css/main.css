@@ -67,7 +67,7 @@
 .visual .scroll_down {
     position: absolute;
     right: -50px;
-    bottom: 80px;
+    bottom: 77px;
     color: #fff;
     z-index: 10;
     transform: rotate(90deg);
@@ -109,15 +109,12 @@
         top: 160px;
     }
     .visual .swiper .swiper-slide .visual_txt h2 {
-        font-size: 48px;
+        font-size: 45px;
     }
     .visual .swiper .swiper-slide .visual_txt p {
         margin: 8px 0 0 0;
     }
-    
-
-
-    
+        
 }
 @media screen and (max-width:768px){
         .visual {
@@ -130,6 +127,7 @@
         .visual .swiper .swiper-slide .photo {
             overflow: hidden;
             height: 269px;
+            border-radius: 30px 0 0 0;
             margin: 287px 0 0 20px;
         }
         .visual .swiper .swiper-slide .visual_txt {
@@ -137,15 +135,15 @@
             top: 115px;
         }
         .visual .swiper .swiper-slide .visual_txt h2 {
-            font-size: 35px;
+            font-size: 33px;
         }
         .visual .swiper .swiper-slide .visual_txt p {
             margin: 3px 0 0 0;
-            font-size: 16px;
+            font-size: 15px;
         }
         .visual .swiper-pagination {
             left: 20px;
-            bottom: 290px;
+            bottom: 296px;
             gap: 3px;
         }
         .visual .swiper-pagination .swiper-pagination-bullet {
@@ -155,8 +153,6 @@
             display: none;
         }
 }
-
-
 
 .fullscreen_menu {
     display: none;

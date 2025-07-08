@@ -87,14 +87,14 @@ html, body {
 }
 @media screen and (max-width:1024px){
     :root {
-        --header-h: 56px; /* header 높이 */
-        --header-h-m: -56px;
-        --tit-size: 2.18rem; /* 37px/17 = 2.18 */
-        --display-size: 2.65rem; /* 45/16 = 2.65*/
+        --tit-size: 2.18rem;  /* 37px/17 = 2.18 */
+        --display-size: 2.65rem;  /* 45/16 = 2.65 */
     }
 }
 @media screen and (max-width:768px){
     :root {
+        --header-h: 56px; /* header 높이 */
+        --header-h-m: -56px;
         --tit-size: 2.06em; /* 33px/16 = 2.06*/
         --sub-tit-size: 1.44rem; /* 23px/16 = 1.44 */
         --display-size: 1.875rem; /* 30/16 = 1.875 */
