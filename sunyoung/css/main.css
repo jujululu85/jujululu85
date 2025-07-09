@@ -293,7 +293,7 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
-.quick .detail ul li.Estimate a::before {
+.quick .detail ul li.progress a::before {
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_224_282' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_224_282)'%3E%3Cpath d='M5 21.0001C4.45 21.0001 3.97917 20.8043 3.5875 20.4126C3.19583 20.0209 3 19.5501 3 19.0001V5.0001C3 4.4501 3.19583 3.97926 3.5875 3.5876C3.97917 3.19593 4.45 3.0001 5 3.0001H11.525C11.8583 3.0001 12.1083 3.10426 12.275 3.3126C12.4417 3.52093 12.525 3.7501 12.525 4.0001C12.525 4.2501 12.4375 4.47926 12.2625 4.6876C12.0875 4.89593 11.8333 5.0001 11.5 5.0001H5V19.0001H19V12.4751C19 12.1418 19.1042 11.8918 19.3125 11.7251C19.5208 11.5584 19.75 11.4751 20 11.4751C20.25 11.4751 20.4792 11.5584 20.6875 11.7251C20.8958 11.8918 21 12.1418 21 12.4751V19.0001C21 19.5501 20.8042 20.0209 20.4125 20.4126C20.0208 20.8043 19.55 21.0001 19 21.0001H5ZM9 14.0001V11.5751C9 11.3084 9.05 11.0543 9.15 10.8126C9.25 10.5709 9.39167 10.3584 9.575 10.1751L18.175 1.5751C18.375 1.3751 18.6 1.2251 18.85 1.1251C19.1 1.0251 19.35 0.975098 19.6 0.975098C19.8667 0.975098 20.1208 1.0251 20.3625 1.1251C20.6042 1.2251 20.825 1.3751 21.025 1.5751L22.425 3.0001C22.6083 3.2001 22.75 3.42093 22.85 3.6626C22.95 3.90426 23 4.1501 23 4.4001C23 4.6501 22.9542 4.89593 22.8625 5.1376C22.7708 5.37926 22.625 5.6001 22.425 5.8001L13.825 14.4001C13.6417 14.5834 13.4292 14.7293 13.1875 14.8376C12.9458 14.9459 12.6917 15.0001 12.425 15.0001H10C9.71667 15.0001 9.47917 14.9043 9.2875 14.7126C9.09583 14.5209 9 14.2834 9 14.0001ZM11 13.0001H12.4L18.2 7.2001L17.5 6.5001L16.775 5.8001L11 11.5751V13.0001Z' fill='%2300291B'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .quick .detail ul li.phone a::before {
@@ -364,6 +364,9 @@
 .process .list ul li:first-child h3::after {
     display: none;
 }
+.process .list ul li h3 .photo {
+    display: none;
+}
 .process .list ul li .box_wrap {
     border: 2px solid #00291B;
     border-radius: 25px;
@@ -416,6 +419,7 @@
     border-radius: 20px;
     color: #fff;
     height: 100%;
+    margin-right: -2px;
     transform: rotateY(-180deg);
 }
 .process .list ul li:hover .box_wrap .txt_box {
@@ -477,7 +481,9 @@
         .process .list ul li h3 span {
             display: none;
         }
-        
+        .process .list ul li h3 .photo {
+            align-items: center;
+        }
         .process .list ul li:first-child h3 {
             border-radius: 25px 25px 0 0;
         }
@@ -494,7 +500,7 @@
         .process .list ul li .box_wrap {
             margin: 8px 0;
             height: 120px;
-            width: calc(100% - 128px);
+            width: calc(100% - 96px);
         }
         .process .list ul li .box_wrap::after {
             content: "";
@@ -520,14 +526,54 @@
         }
         .process .list ul li .box_wrap .txt_box strong {
             font-size: 15px; 
-            padding: 18px 0 5px 40px;
+            padding: 18px 0 5px 25px;
             text-align: left;
         }
         .process .list ul li .box_wrap .txt_box span {
             font-size: 12px;
-            padding: 0 0 0 40px;
+            padding: 0 0 0 25px;
             text-align: left;
+        }
+        .process .list ul li .box_wrap .txt_box span br {
+            display: none;
         }
 }
 
 
+.design .tit h2 {
+    margin: 112px 0 0 0;
+}
+.design .tit p {
+    font-size: var(--tit-size);
+    font-weight: var(--bold-weight);
+    line-height: var(--tit-line-height);
+    color: var(--tit-color);
+    margin: 12px 0 40px 0;
+}
+.design .txt_design .photo {
+    overflow: hidden;
+    height: 420px;
+    border-radius: 30px;
+    position: relative;
+}
+.design .txt_design .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.design .txt_design .txt {
+    position: absolute;
+    left: 0;
+    top: 142px;
+    padding: 0 0 19px 0;
+    color: #1d1d1d;
+    display: block;
+}
+.design .txt_design .txt h3 {
+    font-size: var(--sub-tit-size);
+    font-weight: var(--bold-weight);
+    line-height: var(--tit-line-height);
+    text-align: center;
+}
+
+    
