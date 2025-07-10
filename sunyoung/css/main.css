@@ -373,7 +373,7 @@
     transition: 0.5s;
 }
 .process .list ul li:hover .box_wrap {
-   transform: rotateY(0);
+   transform: rotateY(-180deg);
 }
 .process .list ul li .box_wrap::after {
     content: "";
@@ -499,6 +499,9 @@
             margin: 8px 0;
             height: 120px;
             width: calc(100% - 128px);
+        }
+        .process .list ul li:hover .box_wrap {
+            transform: rotateY(0);
         }
         .process .list ul li .box_wrap::after {
             content: "";
