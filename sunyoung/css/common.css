@@ -96,7 +96,7 @@ html, body {
         --header-h: 56px; /* header 높이 */
         --header-h-m: -56px;
         --tit-size: 2.06em; /* 33px/16 = 2.06*/
-        --sub-tit-size: 1.44rem; /* 23px/16 = 1.44 */
+        --sub-tit-size: 1.56rem; /* 25px/16 = 1.56 */
         --display-size: 1.875rem; /* 30/16 = 1.875 */
     }
 }
