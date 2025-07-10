@@ -226,16 +226,18 @@ footer .footer_wrap .link_wrap .link {
     text-align: right;
     margin-bottom: 28px;
 }
-footer .footer_wrap .link_wrap .link li:hover {
-    font-weight: var(--bold-weight);
-}
 footer .footer_wrap .link_wrap .link a {
     font-size: 14px;
     color: rgba(255,255,255,0.8);
 }
+footer .footer_wrap .link_wrap .link a:hover {
+    font-weight: var(--bold-weight);
+}
 footer .footer_wrap .link_wrap .link a span {
     color: rgba(255,255,255,0.6);
-
+}
+footer .footer_wrap .link_wrap .link a span:hover {
+    font-weight: var(--bold-weight);
 }
 footer .f_info {
     margin-top: 40px;
@@ -307,14 +309,8 @@ footer .copyright {
             font-size: 13px;
             color: rgba(255,255,255,0.8);
         }
-        footer .footer_wrap .link_wrap .link a:hover {
-            font-weight: var(--bold-weight);
-        }
         footer .footer_wrap .link_wrap .link a span {
             color: rgba(255,255,255,0.6);        
-        }
-        footer .footer_wrap .link_wrap .link a span:hover {
-            font-weight: var(--bold-weight);
         }
         footer .f_info {
             margin-top: 24px;
