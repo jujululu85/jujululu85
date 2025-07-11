@@ -262,6 +262,9 @@ footer .f_info span::after {
 footer .f_info span:last-child::after {
     display: none;
 }
+footer .f_info em {
+    color: rgba(255,255,255,0.4);
+}
 footer .copyright {
     margin: 7px 0 0 0;
     font-size: 14px;

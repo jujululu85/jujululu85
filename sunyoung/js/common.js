@@ -9,4 +9,11 @@ $(document).ready(function(){
     $('header .gnb .gnb_wrap ul.depth1 > li').on('mouseleave', function(){
 		$(this).removeClass('active');	
 	});
+
+  $('.quick .detail ul li.top button').on('click', function(){
+    //console.log('top버튼 눌렀다!!!')
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500)
+})
 });
