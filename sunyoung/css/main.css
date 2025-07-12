@@ -152,7 +152,7 @@
 }
 @media screen and (min-width:769px){
         .fullscreen_menu {
-            display: block;
+            display: none;
             height: 100vh;
             position: fixed;
             left: 0;
@@ -274,7 +274,7 @@
 }
 @media screen and (max-width:768px){
     .fullscreen_menu {
-        display: block;    
+        display: none;    
         position: fixed;    
         left: 0;
         top: 0;
