@@ -180,7 +180,7 @@
             left: 50%;
             top: 0;
             width: 100vw;
-            height: 2px;
+            height: 1px;
             background-color: rgba(204,204,204,0.6);
             transform: translateX(-50%);
         }
@@ -259,6 +259,7 @@
     .fullscreen_menu .menu_wrap ul.depth1 > li > a {
         width: 240px;
         padding: 35px 0;
+        font-size: 33px;
     }
     .fullscreen_menu .menu_wrap ul.depth1 > li > ul.depth2 {
         width: calc(100% - 403px);
@@ -284,15 +285,97 @@
         background-color: #fff;
     }
     .fullscreen_menu .menu_wrap {
+        margin-top: 56px;
+        max-height: calc(100vh - 108px);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .fullscreen_menu .menu_wrap ul.depth1 > li {
+        display: flex;
+        text-align: left;
         position: relative;
+        align-items: center;
     }
-    .fullscreen_menu .menu_logo {
-        display: none;
+    .fullscreen_menu .menu_wrap ul.depth1 > li::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(204,204,204,0.6);
+        transform: translateX(-50%);
     }
-    .fullscreen_menu .menu_close {
+    .fullscreen_menu .menu_wrap ul.depth1 > li:last-child::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(204,204,204,0.6);
+        transform: translateX(-50%);
+    }
+    .fullscreen_menu .menu_wrap ul.depth1 > li > a {
+        font-size: 20px;
+        font-weight: var(--bold-weight);
+        line-height: var(--tit-line-height);
+        color: var(--tit-color);
+        padding: 24px 0;
+    }
+    .fullscreen_menu .menu_wrap ul.depth1 > li > a::after {
+        content: "";
         position: absolute;
         right: 0;
-        top: 0;
+        top: 22px;
+        width: 30px;
+        height: 30px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_552_204' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='30' height='30'%3E%3Crect width='30' height='30' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_552_204)'%3E%3Cpath d='M15 18.7188C14.8333 18.7188 14.6771 18.6927 14.5313 18.6406C14.3854 18.5885 14.25 18.5 14.125 18.375L8.375 12.625C8.14583 12.3958 8.03125 12.1042 8.03125 11.75C8.03125 11.3958 8.14583 11.1042 8.375 10.875C8.60417 10.6458 8.89583 10.5312 9.25 10.5312C9.60417 10.5312 9.89583 10.6458 10.125 10.875L15 15.75L19.875 10.875C20.1042 10.6458 20.3958 10.5312 20.75 10.5312C21.1042 10.5312 21.3958 10.6458 21.625 10.875C21.8542 11.1042 21.9688 11.3958 21.9688 11.75C21.9688 12.1042 21.8542 12.3958 21.625 12.625L15.875 18.375C15.75 18.5 15.6146 18.5885 15.4688 18.6406C15.3229 18.6927 15.1667 18.7188 15 18.7188Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+    .fullscreen_menu .menu_wrap ul.depth1 > li > ul.depth2 {
+        display: none;
+        background-color: #F7F6F1;
+        border-radius: 10px;
+        padding: 22px 25px;
+    }
+    .fullscreen_menu .menu_wrap ul.depth1 > li > ul.depth2 li > a {
+        display: block;
+        line-height: 2;
+    }
+    /* 2차 메뉴가 열렸을때*/
+    .fullscreen_menu .menu_wrap ul.depth1 > li.open > a {
+        color: var(--main-color);
+    }
+    .fullscreen_menu .menu_wrap ul.depth1 > li.open > a::after {
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_552_213' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='30' height='30'%3E%3Crect width='30' height='30' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_552_213)'%3E%3Cpath d='M15 13.5L10.125 18.375C9.89583 18.6042 9.60417 18.7188 9.25 18.7188C8.89583 18.7188 8.60417 18.6042 8.375 18.375C8.14583 18.1458 8.03125 17.8542 8.03125 17.5C8.03125 17.1458 8.14583 16.8542 8.375 16.625L14.125 10.875C14.375 10.625 14.6667 10.5 15 10.5C15.3333 10.5 15.625 10.625 15.875 10.875L21.625 16.625C21.8542 16.8542 21.9688 17.1458 21.9688 17.5C21.9688 17.8542 21.8542 18.1458 21.625 18.375C21.3958 18.6042 21.1042 18.7188 20.75 18.7188C20.3958 18.7188 20.1042 18.6042 19.875 18.375L15 13.5Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E ");
+
+    }
+    .fullscreen_menu .menu_txt {
+        font-size: 17px;
+        font-weight: var(--bold-weight);
+        line-height: var(--tit-line-height);
+        color: var(--tit-color);
+        text-align: center;
+        width: 100%;
+        height: 108px;
+        padding: 30px 0;
+    }
+    .fullscreen_menu .menu_txt span {
+        color: #555;
+    }
+    .fullscreen_menu .menu_txt em {
+        font-weight: 400;
+    }
+    .fullscreen_menu .menu_top .menu_logo {
+        display: none;
+    }
+    .fullscreen_menu .menu_top .menu_close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
         width: 24px;
         height: 24px;
         background-position: center center;
