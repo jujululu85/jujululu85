@@ -405,7 +405,7 @@ header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a:hover {
         }
         .fullscreen_menu .menu_wrap ul.depth1 > li > span::after {
         top: 17px;
-    }
+        }
         .fullscreen_menu .menu_wrap ul.depth1 > li > ul.depth2 > li > a {
             font-size: 15px;
         }
