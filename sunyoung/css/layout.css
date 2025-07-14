@@ -403,6 +403,9 @@ header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a:hover {
         .fullscreen_menu .menu_wrap ul.depth1 > li > span {
             font-size: 20px;
         }
+        .fullscreen_menu .menu_wrap ul.depth1 > li > span::after {
+        top: 17px;
+    }
         .fullscreen_menu .menu_wrap ul.depth1 > li > ul.depth2 > li > a {
             font-size: 15px;
         }
@@ -441,6 +444,9 @@ footer .footer_wrap .slogan p {
 }
 footer .footer_wrap .slogan p span {
     font-weight: 400;
+}
+footer .footer_wrap .counsel{
+    text-align: right;
 }
 footer .footer_wrap .counsel h3 {
     font-weight: var(--bold-weight);
