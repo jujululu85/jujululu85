@@ -129,7 +129,7 @@
         }
         .visual .swiper .swiper-slide .visual_txt {
             left: 20px;
-            top: 100px;
+            top: 90px;
         }
         .visual .swiper .swiper-slide .visual_txt h2 {
             font-size: 33px;
@@ -140,7 +140,7 @@
         }
         .visual .swiper-pagination {
             left: 20px;
-            bottom: 319px;
+            bottom: 322px;
             gap: 3px;
         }
         .visual .swiper-pagination .swiper-pagination-bullet {
