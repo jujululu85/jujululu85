@@ -189,6 +189,7 @@ section .tit h2 {
         margin: 7em 0 1.56em 0; /* 112px/16 = 7   25/16 = 1.56 */
     }
 }/*@media*/
+
 .biz .list ul {
     display: flex;
     gap: 1px;
