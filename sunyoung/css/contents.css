@@ -268,12 +268,15 @@
 }
 .ctn_biz .biz_list ol li {
     position: relative;
-    width: calc(100% - 190px);
+    width: calc(25% - 190px);
+}
+.ctn_biz .biz_list ol li.active {
+    width: 70%;
 }
 .ctn_biz .biz_list ol li .photo {
     overflow: hidden;
     height: 670px;
-    position: relative;
+    position: absolute;
     border-radius: 10px;
 }
 .ctn_biz .biz_list ol li .photo::before {
@@ -284,10 +287,21 @@
     width: 100%;
     height: 100%;
     background: #333;
+    transition: 0.3s;
 }
 .ctn_biz .biz_list ol li .photo img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
 
