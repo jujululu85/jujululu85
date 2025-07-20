@@ -263,11 +263,10 @@
 }
 .ctn_biz .biz_list ol {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
 }
 .ctn_biz .biz_list ol li {
     position: relative;
-    width: 25%;
 }
 
 
