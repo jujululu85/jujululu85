@@ -280,6 +280,9 @@
     position: relative;
     width: 57.29%;
 }
+.ctn_biz .biz_list ul li .photo {
+    display: none;
+}
 .ctn_biz .biz_list ul li.bg01 .photo {
     background: url(../images/sub/biz_01.jpg) no-repeat center center / cover;
 }
@@ -324,9 +327,6 @@
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);
 }
-.ctn_biz .biz_list ul li .photo {
-    display: none;
-}
 .ctn_biz .biz_list ul li.active .txt {
     display: none;
 }
@@ -360,66 +360,42 @@
         }
         .ctn_biz .biz_list ul {
             display: block;  
-            gap: 3px;
         }
         .ctn_biz .biz_list ul li {
-            width: 100%;    
+            width: 100%; 
+            padding: 3px 0;
         }
         .ctn_biz .biz_list ul li.active {
-            width: 100%;
+            display: none;
         }
-        .ctn_biz .biz_list ul li.bg01 .photo {
-            background: url(../images/sub/biz_01.jpg) no-repeat center center / cover;
-        }
-        .ctn_biz .biz_list ul li.bg02 .photo {
-            background: url(../images/sub/biz_02.jpg) no-repeat center center / cover;
-        }
-        .ctn_biz .biz_list ul li.bg03 .photo {
-            background: url(../images/sub/biz_03.jpg) no-repeat center center / cover;
-        }
-        .ctn_biz .biz_list ul li.bg04 .photo {
-            background: url(../images/sub/biz_04.jpg) no-repeat center center / cover;
-        }
-        .ctn_biz .biz_list ul li.bg05 .photo {
-            background: url(../images/sub/biz_05.jpg) no-repeat center center / cover;
-        }
-        .ctn_biz .biz_list ul li.active .photo{
+        .ctn_biz .biz_list ul li .photo{
             height: 230px;
             border-radius: 5px;
-            padding: 0 25px 20px 20px;
+            padding: 108px 25px 20px 20px;
+            color: #fff;
+            display: block;
         }
-        .ctn_biz .biz_list ul li.active .photo h3 {
+        .ctn_biz .biz_list ul li .photo h3 {
             font-size: 20px;
+            font-weight: var(--bold-weight);
+            line-height: var(--tit-line-height);
         }
-        .ctn_biz .biz_list ul li.active .photo .sub_tit {
+        .ctn_biz .biz_list ul li .photo .sub_tit {
             font-size: 17px;
-            margin: 5x 0 10px 0;
+            font-weight: var(--bold-weight);
+            line-height: var(--tit-line-height);
+            margin: 5px 0 10px 0;
         }
-        .ctn_biz .biz_list ul li.active .photo span {
+        .ctn_biz .biz_list ul li .photo span {
+            position: absolute;
             right: 25px;
             top: 25px;
-            font-size: 16px;    
-        }
-        .ctn_biz .biz_list ul li .photo {
-            display: none;
-        }
-        .ctn_biz .biz_list ul li.active .txt {
-            display: none;
+            font-size: 16px; 
+            font-weight: var(--bold-weight);
+            line-height: var(--tit-line-height); 
         }
         .ctn_biz .biz_list ul li .txt {
-            height: 230px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            padding: 20px 0;
-        }
-        .ctn_biz .biz_list ul li .txt h3 {
-            transform: rotate(0) translateX(50%);
-        }
-        .ctn_biz .biz_list ul li .txt span {
-            transform: rotate(0) translateX(-50%);
+            display: none;
         }
 }
 
