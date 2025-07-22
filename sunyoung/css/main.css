@@ -353,8 +353,8 @@
         .process .list ul li .box_wrap::after {
             content: "";
             position: absolute;
-            left: -46px;
-            width: 40px;
+            left: -50px;
+            width: 48px;
             height: 2px;
             border-top: 2px dotted #1d1d1d;
             top: 50%;
