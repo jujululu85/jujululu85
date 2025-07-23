@@ -666,23 +666,19 @@
     gap: 24px;
 }
 .ctn_design .list ul li {
-    width: calc(50% - 11px);
+    width: calc(50% - 12px);
 }
 .ctn_design .list ul li a {
     font-size: 30px;
     font-weight: var(--bold-weight);
-    padding: 22px 217px;
     border-radius: 20px;
     border: 1px solid #00291B;
-}
-.ctn_design .list ul li.item1 a {
-    background-color: #00291B;
-    color: #fff;
-}
-.ctn_design .list ul li.item2 a {
     color: var(--tit-color);
-    padding: 22px 253px;    
+    display: block;
+    text-align: center;
+    padding: 22px 0;
 }
+
 .ctn_design .sub_txt {
     text-align: center;
     margin: 60px 0 56px 0;
@@ -699,12 +695,12 @@
 }
 .ctn_design .photo_list ul {
     display: flex;
-    justify-content: space-between;
-    margin: 1px 0;
+    flex-wrap: wrap;
 }
 .ctn_design .photo_list ul li {
     position: relative;
     width: 50%;
+    transition: 0.5s;
 }
 .ctn_design .photo_list ul li .photo {
     overflow: hidden;
@@ -728,23 +724,18 @@
 .ctn_design .top {
     display: none;
 }
-@media screen and (min-width:931px) and (max-width:1300px){ 
+
+@media screen and (min-width:769px) and (max-width:1300px){
     .ctn_design .list ul li a {
-        padding: 22px 120px;
-    }
-    .ctn_design .list ul li.item2 a {
-        padding: 22px 130px
-    }
-}
-@media screen and (min-width:769px) and (max-width:930px){
-    .ctn_design .list ul li a {
-        padding: 10px 60px;
-    }
-    .ctn_design .list ul li.item2 a {
-        padding: 10px 70px
+        padding: 10px 0;
     }
  }
-
+ @media screen and (min-width:769px){
+    .ctn_design .list ul li.active a {
+        background-color: #00291B;
+        color: #fff;
+    } 
+ }
 @media screen and (max-width:768px){ 
         .ctn_design {
             margin-top: 70px;
@@ -770,11 +761,8 @@
         }
         .ctn_design .list ul li a {
             font-size: 16px;
-            padding: 7px 18px;
+            padding: 7px 0;
             border-radius: 10px;
-        }
-        .ctn_design .list ul li.item2 a {
-            padding: 7px 34px;    
         }
         .ctn_design .sub_txt {
             margin: 30px 0 55px 0; 
@@ -791,7 +779,6 @@
         }
         .ctn_design .photo_list ul {
             display: block;
-            margin: 0;
         }
         .ctn_design .photo_list ul li {
             width: 100%;
