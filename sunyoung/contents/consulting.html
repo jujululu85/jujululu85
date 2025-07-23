@@ -92,16 +92,17 @@
         </div>  
     </div>
     <main class="container">
-        <div class="contents ctn_consulting"><!--ctn_페이지명 클래스명을 반드시 추가-->
+        <div class="page_tit">
             <div class="wrapper">
                 <div class="photo"><img src="../images/sub/consul_bg.jpg" alt="인테리어그림"></div>
-                <div class="visual_txt">
+                <div class="tit_txt">
                     <h2>consult<span>ing</span></h2>
                     <p>견적문의</p>
                 </div>
-                <div class="">
-
-                </div>
+            </div>
+        </div>
+        <div class="contents ctn_consulting"><!--ctn_페이지명 클래스명을 반드시 추가-->
+            <div class="wrapper">
                 <div class="txt_box">
                     <form>
                         <fieldset>
@@ -113,7 +114,7 @@
                                 <div class="item">
                                     <label for="category">상담분야</label>
                                     <select id="category" class="w70">
-                                        <option>상담 분야를 선택해주세요</option>
+                                        <option selected disabled>상담 분야를 선택해주세요</option>
                                         <option>상가 인테리어</option>
                                         <option>주거 인테리어</option>
                                         <option>호텔 인테리어</option>
@@ -130,8 +131,8 @@
                                     <input type="number" id="tel" placeholder="숫자만 입력해주세요" class="w100">
                                 </div><!--//item-->
                                 <div class="item">
-                                    <label for="Area">지역</label>
-                                    <input type="text" id="Area" placeholder="지역을 입력해주세요" class="w100">
+                                    <label for="address">현장주소</label>
+                                    <input type="text" id="address" placeholder="현장주소를 입력해주세요" class="w100">
                                 </div><!--//item-->
                                 <div class="item">
                                     <label for="memo">상담내용</label>

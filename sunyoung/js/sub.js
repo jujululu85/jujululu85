@@ -11,6 +11,11 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
+  $('.ctn_residential .list ul li').on('mouseenter', function(){
+		$('.ctn_residential .list ul li').removeClass('active');
+		$(this).addClass('active');
+	});
+
      /* 
      .ctn_design .top 클릭하면 상단으로 스크롤됨 
     */

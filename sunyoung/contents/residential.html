@@ -7,6 +7,9 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" href="../css/sub.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script src="../js/sub.js"></script>
     <script src="../js/contents.js"></script>
     <script src="../js/common.js"></script>
@@ -92,96 +95,98 @@
         </div>  
     </div>
     <main class="container">
-        <div class="contents ctn_residential"><!--ctn_페이지명 클래스명을 반드시 추가-->
+        <div class="page_tit">
             <div class="wrapper">
                 <div class="photo"><img src="../images/sub/resi_bg.jpg" alt="인테리어그림"></div>
-                <div class="visual_txt">
+                <div class="tit_txt">
                     <h2>Who we <span>do</span></h2>
                     <p>포트폴리오</p>
                 </div>
-                <div class="">
-
-                </div>
+            </div>
+        </div>
+        <div class="contents ctn_residential"><!--ctn_페이지명 클래스명을 반드시 추가-->
+            <div class="wrapper">
                 <div class="list">
-                    <ul>
-                        <li class=""><a href="#">주거공간</a></li>
-                        <li class=""><a href="#">상업공간</a></li>
-                        <li class=""><a href="#">숙박공간</a></li>
-                    </ul>
-                </div>
-                <div class="sub_txt">
-                    <p>주거공간 포트폴리오</p>
-                    <strong>Residential space Portfolio</strong>
-                </div>
-                <div class="photo_list">
-                    <ul>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_01.jpg" alt=""></div>
-                            <p>[주택]청주 수동 상가주택 24y</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_02.jpg" alt=""></div>
-                            <p>[아파트]천안 P아파트 132㎡</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_03.jpg" alt=""></div>
-                            <p>[아파트]한양 수자인 33py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_04.jpg" alt=""></div>
-                            <p>[주택]금왕 주택</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_05.jpg" alt=""></div>
-                            <p>[주택]증평 주택</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_06.jpg" alt=""></div>
-                            <p>[아파트]충남 천안 33py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_07.jpg" alt=""></div>
-                            <p>[아파트]청주 율량 48py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_08.jpg" alt=""></div>
-                            <p>[아파트]청주 용암 34py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_09.jpg" alt=""></div>
-                            <p>[아파트]청주 용담 32py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_10.jpg" alt=""></div>
-                            <p>[아파트]청주 오창 34py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_11.jpg" alt=""></div>
-                            <p>[아파트]청주 비하 40py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_12.jpg" alt=""></div>
-                            <p>[아파트]부산 정관 34py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_13.jpg" alt=""></div>
-                            <p>[아파트]부산 광안 24py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_14.jpg" alt=""></div>
-                            <p>[아파트]아산연화마을 8단지 29py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_15.jpg" alt=""></div>
-                            <p>[아파트]청주 개신 주공 24py</p>
-                        </li>
-                        <li>
-                            <div class="photo"><img src="../images/sub/residential_16.jpg" alt=""></div>
-                            <p>[아파트]청주 사직동 푸르지오 34py</p>
-                        </li>
-                    </ul>
-                </div><!--//photo_list-->
-            </div><!--//wrapper-->
+                <ul>
+                    <li class="active"><a href="Residential.html">주거공간</a></li>
+                    <li class=""><a href="commercial.html">상업공간</a></li>
+                    <li class=""><a href="accommodation.html">숙박공간</a></li>
+                </ul>
+            </div>
+            <div class="sub_txt">
+                <p>주거공간 포트폴리오</p>
+                <strong>Residential space Portfolio</strong>
+            </div>
+            <div class="photo_list">
+                <ul>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_01.jpg" alt=""></div>
+                        <p>[주택]청주 수동 상가주택 24y</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_02.jpg" alt=""></div>
+                        <p>[아파트]천안 P아파트 132㎡</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_03.jpg" alt=""></div>
+                        <p>[아파트]한양 수자인 33py</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_04.jpg" alt=""></div>
+                        <p>[주택]금왕 주택</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_05.jpg" alt=""></div>
+                        <p>[주택]증평 주택</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_06.jpg" alt=""></div>
+                        <p>[아파트]충남 천안 33py</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_07.jpg" alt=""></div>
+                        <p>[아파트]청주 율량 48py</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_08.jpg" alt=""></div>
+                        <p>[아파트]청주 용암 34py</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_09.jpg" alt=""></div>
+                        <p>[아파트]청주 용담 32py</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_10.jpg" alt=""></div>
+                        <p>[아파트]청주 오창 34py</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_11.jpg" alt=""></div>
+                        <p>[아파트]청주 비하 40py</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_12.jpg" alt=""></div>
+                        <p>[아파트]부산 정관 34py</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_13.jpg" alt=""></div>
+                        <p>[아파트]부산 광안 24py</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_14.jpg" alt=""></div>
+                        <p>[아파트]아산연화마을 8단지 29py</p>
+                    </li>
+                    <li data-aos="fade-up">
+                        <div class="photo"><img src="../images/sub/residential_15.jpg" alt=""></div>
+                        <p>[아파트]청주 개신 주공 24py</p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <div class="photo"><img src="../images/sub/residential_16.jpg" alt=""></div>
+                        <p>[아파트]청주 사직동 푸르지오 34py</p>
+                    </li>
+                </ul>
+            </div><!--//photo_list-->
+            </div>
+            
             <button class="top"><span class="blind">TOP</span></button>
         </div><!--//ctn_residential-->        
     </main>
