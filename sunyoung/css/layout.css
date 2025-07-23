@@ -20,8 +20,8 @@ header .inner {
 
 header .logo a {
     display: block;
-    width: 230px;
-    height: 26px;
+    width: 302px;
+    height: 27px;
     background: url(../images/common/logo_w.png) no-repeat center center / contain;
 }
 header .util {
@@ -146,8 +146,8 @@ header .gnb .gnb_wrap ul.depth1 > li > ul.depth2 > li > a:hover {
                 padding: 0 20px;
             }    
             header .logo a {
-                width: 116px;
-                height: 14px;
+                width: 138px;
+                height: 13px;
             }
             header .util .hamburger .hamburger_open { 
                 width: 30px; 

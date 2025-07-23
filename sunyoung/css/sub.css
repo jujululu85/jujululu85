@@ -18,8 +18,8 @@ header .inner {
 }
 header .logo a {
     display: block;
-    width: 230px;
-    height: 26px;
+    width: 302px;
+    height: 27px;
     background: url(../images/common/logo.png) no-repeat center center / contain;
 }
 @media screen and (min-width:769px){
@@ -36,8 +36,8 @@ header .logo a {
             background-color: #fff;
         }
         header .logo a {
-            width: 120px;
-            height: 16px;
+            width: 138px;
+            height: 13px;
         }
         header .util .hamburger .hamburger_open { 
             width: 30px; 

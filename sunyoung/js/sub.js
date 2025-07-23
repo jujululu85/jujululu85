@@ -20,6 +20,12 @@ $(document).ready(function(){
           }, 500);
 	});
 
+  $('.ctn_consulting .top').on('click', function(){
+		$('html, body').animate({
+            scrollTop : 0
+          }, 500);
+	});
+
     $(window).scroll(function(){
       AOS.init({
         offset: 150, // 해당 콘텐츠가 하단에서 몇 px 위로 올라와에 나타나는 효과가 나타날지 셋팅하는 값
