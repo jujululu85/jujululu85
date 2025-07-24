@@ -1,38 +1,38 @@
 $(document).ready(function(){
     /* .ctn_biz .biz_list ul li 마우스를 오버하면 다른 li에 있는 active클래스 삭제하고
-         */
+         현재 마우스를 올린 li에만 active클래스 추가 */
     $('.ctn_biz .biz_list ul li').on('mouseenter', function(){
 		$('.ctn_biz .biz_list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-  $('.design .list ul li').on('mouseenter', function(){
+  $('.design .list ul li').on('click', function(){
 		$('.design .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-  $('.design_02 .list ul li').on('mouseenter', function(){
+  $('.design_02 .list ul li').on('click', function(){
 		$('.design .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-  $('.ctn_residential .list ul li').on('mouseenter', function(){
+  $('.ctn_residential .list ul li').on('click', function(){
 		$('.ctn_residential .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-  $('.ctn_commercial .list ul li').on('mouseenter', function(){
+  $('.ctn_commercial .list ul li').on('click', function(){
 		$('.ctn_residential .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-  $('.ctn_accommodation .list ul li').on('mouseenter', function(){
+  $('.ctn_accommodation .list ul li').on('click', function(){
 		$('.ctn_residential .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
      /* 
-     .ctn_design .top 클릭하면 상단으로 스크롤됨 
+     .footer .top 클릭하면 상단으로 스크롤됨 
     */
  
   $('footer .top').on('click', function(){
