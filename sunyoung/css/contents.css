@@ -100,7 +100,7 @@
     text-align: right;
     margin-top: 45px;
 }
-.ctn_info .txt_box .btn_wap .txt_download {
+.ctn_info .txt_box .btn_wap a {
     border: 1px solid #555;
     border-radius: 20px;
     padding: 16px 58px 16px 25px;
@@ -110,7 +110,7 @@
     color: var(--tit-color);
     position: relative;
 }
-.ctn_info .txt_box .btn_wap .txt_download::after {
+.ctn_info .txt_box .btn_wap a::after {
     content: "";
     position: absolute;
     right: 20px;
@@ -155,13 +155,13 @@
             text-align: center;
             margin-top: 43px;
         }
-        .ctn_info .txt_box .btn_wap .txt_download {
+        .ctn_info .txt_box .btn_wap a {
             border: 1px solid #555;
             border-radius: 10px;
             padding: 10px 45px 9px 15px;
             font-size: 16px;
         }
-        .ctn_info .txt_box .btn_wap .txt_download::after {
+        .ctn_info .txt_box .btn_wap a::after {
             right: 13px;
             bottom: 9px;
             width: 20px;
@@ -806,17 +806,21 @@
     width: 50%;
     transition: 0.5s;
 }
-.ctn_residential .photo_list ul li .photo {
+.ctn_residential .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.ctn_residential .photo_list ul li .photo img {
+.ctn_residential .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
-.ctn_residential .photo_list ul li p {
+.ctn_residential .photo_list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.ctn_residential .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -871,11 +875,11 @@
         .ctn_residential .photo_list ul li {
             width: 100%;
         }
-        .ctn_residential .photo_list ul li .photo {
+        .ctn_residential .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .ctn_residential .photo_list ul li p {
+        .ctn_residential .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
@@ -925,19 +929,22 @@
 .ctn_commercial .photo_list ul li {
     position: relative;
     width: 50%;
-    transition: 0.5s;
 }
-.ctn_commercial .photo_list ul li .photo {
+.ctn_commercial .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.ctn_commercial .photo_list ul li .photo img {
+.ctn_commercial .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
-.ctn_commercial .photo_list ul li p {
+.ctn_commercial .photo_list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.ctn_commercial .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -992,11 +999,11 @@
         .ctn_commercial .photo_list ul li {
             width: 100%;
         }
-        .ctn_commercial .photo_list ul li .photo {
+        .ctn_commercial .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .ctn_commercial .photo_list ul li p {
+        .ctn_commercial .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
@@ -1049,17 +1056,21 @@
     width: 50%;
     transition: 0.5s;
 }
-.ctn_accommodation .photo_list ul li .photo {
+.ctn_accommodation .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.ctn_accommodation .photo_list ul li .photo img {
+.ctn_accommodation .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
-.ctn_accommodation .photo_list ul li p {
+.ctn_accommodation .photo_list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.ctn_accommodation .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -1114,11 +1125,11 @@
         .ctn_accommodation .photo_list ul li {
             width: 100%;
         }
-        .ctn_accommodation .photo_list ul li .photo {
+        .ctn_accommodation .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .ctn_accommodation .photo_list ul li p {
+        .ctn_accommodation .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
@@ -1193,17 +1204,21 @@
     width: 50%;
     transition: 0.5s;
 }
-.design .photo_list ul li .photo {
+.design .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.design .photo_list ul li .photo img {
+.design .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
-.design .photo_list ul li p {
+.design .photo_list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.design .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -1274,11 +1289,11 @@
         .design .photo_list ul li {
             width: 100%;
         }
-        .design .photo_list ul li .photo {
+        .design .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .design .photo_list ul li p {
+        .design .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
@@ -1350,17 +1365,21 @@
     width: 50%;
     transition: 0.5s;
 }
-.design_02 .photo_list ul li .photo {
+.design_02 .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.design_02 .photo_list ul li .photo img {
+.design_02 .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
 }
-.design_02 .photo_list ul li p {
+.design_02 .photo_list ul li a:hover .photo img {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.design_02 .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -1431,11 +1450,11 @@
         .design_02 .photo_list ul li {
             width: 100%;
         }
-        .design_02 .photo_list ul li .photo {
+        .design_02 .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .design_02 .photo_list ul li p {
+        .design_02 .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
