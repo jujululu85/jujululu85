@@ -6,8 +6,13 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
-  $('.ctn_design .list ul li').on('mouseenter', function(){
-		$('.ctn_design .list ul li').removeClass('active');
+  $('.design .list ul li').on('mouseenter', function(){
+		$('.design .list ul li').removeClass('active');
+		$(this).addClass('active');
+	});
+
+  $('.design_02 .list ul li').on('mouseenter', function(){
+		$('.design .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
@@ -16,26 +21,60 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
+  $('.ctn_commercial .list ul li').on('mouseenter', function(){
+		$('.ctn_residential .list ul li').removeClass('active');
+		$(this).addClass('active');
+	});
+
+  $('.ctn_accommodation .list ul li').on('mouseenter', function(){
+		$('.ctn_residential .list ul li').removeClass('active');
+		$(this).addClass('active');
+	});
+
      /* 
      .ctn_design .top 클릭하면 상단으로 스크롤됨 
     */
-    $('.ctn_design .top').on('click', function(){
-		$('html, body').animate({
+  $('.design .top').on('click', function(){
+  $('html, body').animate({
+          scrollTop : 0
+        }, 500);
+  });
+
+  $('.design_02 .top').on('click', function(){
+    $('html, body').animate({
             scrollTop : 0
           }, 500);
-	});
+    });
 
   $('.ctn_consulting .top').on('click', function(){
-		$('html, body').animate({
+    $('html, body').animate({
             scrollTop : 0
           }, 500);
-	});
+  });
 
-    $(window).scroll(function(){
-      AOS.init({
-        offset: 150, // 해당 콘텐츠가 하단에서 몇 px 위로 올라와에 나타나는 효과가 나타날지 셋팅하는 값
-        duration: 500, // 애니메이션 효과가 작동되는 시간
-        easing: 'ease', // 가속도
-      });
+  $('.ctn_residential .top').on('click', function(){
+    $('html, body').animate({
+            scrollTop : 0
+          }, 500);
+  });
+
+  $('.ctn_commercial .top').on('click', function(){
+    $('html, body').animate({
+            scrollTop : 0
+          }, 500);
+  });
+
+  $('.ctn_accommodation .top').on('click', function(){
+    $('html, body').animate({
+            scrollTop : 0
+          }, 500);
+  });
+
+  $(window).scroll(function(){
+    AOS.init({
+      offset: 150, // 해당 콘텐츠가 하단에서 몇 px 위로 올라와에 나타나는 효과가 나타날지 셋팅하는 값
+      duration: 500, // 애니메이션 효과가 작동되는 시간
+      easing: 'ease', // 가속도
     });
+  });
 })//$(document).ready
