@@ -47,11 +47,3 @@ input, select, textarea {
     color: inherit;
     line-height: inherit;
 }
-select {
-    -webkit-appearance : none;
-    -moz-appearance: none;
-    appearance: none;
-}
-select::-ms-expand {
-    display: none;
-}

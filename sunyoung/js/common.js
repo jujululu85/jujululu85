@@ -38,6 +38,14 @@ $(document).ready(function(){
         ($(this).removeClass('active'))
     });
 
+
+    $('footer .top').on('click', function(){
+        $('html, body').animate({
+                scrollTop : 0
+              }, 500);
+      });
+
+      
     /*
     .quick .detail ul li.top button 클릭하면 상단으로 스크롤됨 
     */

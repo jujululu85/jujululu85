@@ -34,41 +34,13 @@ $(document).ready(function(){
      /* 
      .ctn_design .top 클릭하면 상단으로 스크롤됨 
     */
-  $('.design .top').on('click', function(){
-  $('html, body').animate({
-          scrollTop : 0
-        }, 500);
-  });
-
-  $('.design_02 .top').on('click', function(){
-    $('html, body').animate({
-            scrollTop : 0
-          }, 500);
-    });
-
-  $('.ctn_consulting .top').on('click', function(){
+ 
+  $('footer .top').on('click', function(){
     $('html, body').animate({
             scrollTop : 0
           }, 500);
   });
 
-  $('.ctn_residential .top').on('click', function(){
-    $('html, body').animate({
-            scrollTop : 0
-          }, 500);
-  });
-
-  $('.ctn_commercial .top').on('click', function(){
-    $('html, body').animate({
-            scrollTop : 0
-          }, 500);
-  });
-
-  $('.ctn_accommodation .top').on('click', function(){
-    $('html, body').animate({
-            scrollTop : 0
-          }, 500);
-  });
 
   $(window).scroll(function(){
     AOS.init({
