@@ -425,18 +425,18 @@
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);    
 }
-.ctn_performance .perfo_tit .list ul{
+.ctn_performance .perfo_tit .list ul {
     display: flex;
     justify-content: space-between;
     padding: 0 139px;
 }
-.ctn_performance .perfo_tit .list h3 {
+.ctn_performance .perfo_tit .list ul li h3 {
       font-size: 60px;
       font-weight: var(--bold-weight);
       line-height: var(--tit-line-height);
       margin: 55px 0 20px 0;
 }
-.ctn_performance .perfo_tit .list span {
+.ctn_performance .perfo_tit .list ul li span {
     font-size: 25px;
 }
 .ctn_performance .perfo_year_group {
@@ -547,12 +547,15 @@
             display: block;
             padding: 0;
         }
-        .ctn_performance .perfo_tit .list h3 {
+        .ctn_performance .perfo_tit .list ul li h3 {
             font-size: 35px;
             margin: 24px 0 7px 0;
         }
-        .ctn_performance .perfo_tit .list span {
+        .ctn_performance .perfo_tit .list ul li span {
             font-size: 16px;
+        }
+        .ctn_performance .perfo_tit .list ul li p {
+            font-size: 14px;
         }
         .ctn_performance .perfo_year_group {
             margin-top: 71px;

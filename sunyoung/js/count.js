@@ -8,7 +8,7 @@
         const duration = 1000; // ex) 1000 = 1초
 
         // 숫자에 쉼표를 추가할지 여부를 설정합니다.
-        const addCommas = true; // ex) true = 1,000 / false = 1000
+        const addCommas = false; // ex) true = 1,000 / false = 1000
 		
 		$counters.each(function() {
 			const $el = $(this);

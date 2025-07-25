@@ -37,4 +37,6 @@
             requestAnimationFrame(animateCounter);
         }
     }
+
+    
 })( jQuery );
