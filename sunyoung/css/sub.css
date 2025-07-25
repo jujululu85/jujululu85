@@ -48,4 +48,48 @@ header .logo a {
 }
 
 
+/* 3d 디자인 */
+.house {
+    margin-top: 85px;
+}
+.house .house_tit h2 {
+    font-size: var(--tit-size);
+    font-weight: var(--bold-weight);
+    line-height: var(--tit-line-height);
+    color: var(--tit-color);
+    margin: 10px 0 35px 0;
+}
+.house .main_photo {
+    overflow: hidden;
+    height: 530px;
+}
+.house .main_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.house .list {
+    margin-top: 80px;
+}
+.house .list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.house .list ul li {
+    width: calc(50% - 12px);
+}
+.house .list ul li a {
+    font-size: 30px;
+    font-weight: var(--bold-weight);
+    border-radius: 20px;
+    border: 1px solid #00291B;
+    color: var(--tit-color);
+    display: block;
+    text-align: center;
+    padding: 22px 0;
+}
+
+
 

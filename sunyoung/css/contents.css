@@ -1138,87 +1138,44 @@
 
 
 
-/* 3d 디자인 */
-.design {
-    margin-top: 85px;
-}
-.design .design_tit h2 {
-    font-size: var(--tit-size);
-    font-weight: var(--bold-weight);
-    line-height: var(--tit-line-height);
-    color: var(--tit-color);
-    margin: 10px 0 35px 0;
-}
-.design .main_photo {
-    overflow: hidden;
-    height: 530px;
-}
-.design .main_photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.design .list {
-    margin-top: 80px;
-}
-.design .list ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-}
-.design .list ul li {
-    width: calc(50% - 12px);
-}
-.design .list ul li a {
-    font-size: 30px;
-    font-weight: var(--bold-weight);
-    border-radius: 20px;
-    border: 1px solid #00291B;
-    color: var(--tit-color);
-    display: block;
-    text-align: center;
-    padding: 22px 0;
-}
-
-.design .sub_txt {
+.house .sub_txt {
     text-align: center;
     margin: 60px 0 56px 0;
 }
-.design .sub_txt strong {
+.house .sub_txt strong {
     font-size: 30px;
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);
     color: var(--tit-color);
     margin: 15px 0 0 0;
 }
-.design .photo_list {
+.house .photo_list {
     margin-bottom: 120px;
 }
-.design .photo_list ul {
+.house .photo_list ul {
     display: flex;
     flex-wrap: wrap;
 }
-.design .photo_list ul li {
+.house .photo_list ul li {
     position: relative;
     width: 50%;
     transition: 0.5s;
 }
-.design .photo_list ul li a .photo {
+.house .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.design .photo_list ul li a .photo img {
+.house .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
 }
-.design .photo_list ul li a:hover .photo img {
+.house .photo_list ul li a:hover .photo img {
     transform: scale3d(1.2, 1.2, 1);
 }
-.design .photo_list ul li a p {
+.house .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -1229,109 +1186,109 @@
 }
 
 @media screen and (min-width:769px) and (max-width:1300px){
-    .design .list ul li a {
+    .house .list ul li a {
         padding: 10px 0;
     }
  }
  @media screen and (min-width:769px){
-    .design .list ul li.active a {
+    .house .list ul li.active a {
         background-color: #00291B;
         color: #fff;
     } 
  }
 @media screen and (max-width:768px){ 
-        .design {
+        .house {
             margin-top: 70px;
         }
-        .design .design_tit strong {
+        .house .house_tit strong {
             font-size: 15px;            
         }
-        .design .design_tit h2 {
+        .house .house_tit h2 {
             font-size: 25px;
             margin: 5px 0 24px 0;
         }
-        .design .main_photo {
+        .house .main_photo {
             height: 190px;
         }
-        .design .list {
+        .house .list {
             margin-top: 35px;
         }
-        .design .list ul {
+        .house .list ul {
             gap: 5px;
         }
-        .design .list ul li {
+        .house .list ul li {
             width: calc(50% - 8px);
         }
-        .design .list ul li a {
+        .house .list ul li a {
             font-size: 16px;
             padding: 7px 0;
             border-radius: 10px;
         }
-        .design .list ul li span {
+        .house .list ul li span {
             display: none;
         }
-        .design .sub_txt {
+        .house .sub_txt {
             margin: 30px 0 55px 0; 
         }
-        .design .sub_txt p {
+        .house .sub_txt p {
             font-size: 15px;
         }
-        .design .sub_txt strong {
+        .house .sub_txt strong {
             font-size: 16px;
             margin: 8px 0 0 0;
         }
-        .design .photo_list {
+        .house .photo_list {
             margin-bottom: 70px;
         }
-        .design .photo_list ul {
+        .house .photo_list ul {
             display: block;
         }
-        .design .photo_list ul li {
+        .house .photo_list ul li {
             width: 100%;
         }
-        .design .photo_list ul li a .photo {
+        .house .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .design .photo_list ul li a p {
+        .house .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
         }
 }
 
-.design_02 {
+.company {
     margin-top: 85px;
 }
-.design_02 .design_tit h2 {
+.company .company_tit h2 {
     font-size: var(--tit-size);
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);
     color: var(--tit-color);
     margin: 10px 0 35px 0;
 }
-.design_02 .main_photo {
+.company .main_photo {
     overflow: hidden;
     height: 530px;
 }
-.design_02 .main_photo img {
+.company .main_photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.design_02 .list {
+.company .list {
     margin-top: 80px;
 }
-.design_02 .list ul {
+.company .list ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
 }
-.design_02 .list ul li {
+.company .list ul li {
     width: calc(50% - 12px);
 }
-.design_02 .list ul li a {
+.company .list ul li a {
     font-size: 30px;
     font-weight: var(--bold-weight);
     border-radius: 20px;
@@ -1342,44 +1299,44 @@
     padding: 22px 0;
 }
 
-.design_02 .sub_txt {
+.company .sub_txt {
     text-align: center;
     margin: 60px 0 56px 0;
 }
-.design_02 .sub_txt strong {
+.company .sub_txt strong {
     font-size: 30px;
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);
     color: var(--tit-color);
     margin: 15px 0 0 0;
 }
-.design_02 .photo_list {
+.company .photo_list {
     margin-bottom: 120px;
 }
-.design_02 .photo_list ul {
+.company .photo_list ul {
     display: flex;
     flex-wrap: wrap;
 }
-.design_02 .photo_list ul li {
+.company .photo_list ul li {
     position: relative;
     width: 50%;
     transition: 0.5s;
 }
-.design_02 .photo_list ul li a .photo {
+.company .photo_list ul li a .photo {
     overflow: hidden;
     height: 392px;
     border-radius: 5px;
 }
-.design_02 .photo_list ul li a .photo img {
+.company .photo_list ul li a .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
 }
-.design_02 .photo_list ul li a:hover .photo img {
+.company .photo_list ul li a:hover .photo img {
     transform: scale3d(1.2, 1.2, 1);
 }
-.design_02 .photo_list ul li a p {
+.company .photo_list ul li a p {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -1390,77 +1347,76 @@
 }
 
 @media screen and (min-width:769px) and (max-width:1300px){
-    .design_02 .list ul li a {
+    .company .list ul li a {
         padding: 10px 0;
     }
  }
  @media screen and (min-width:769px){
-    .design_02 .list ul li.active a {
+    .company .list ul li.active a {
         background-color: #00291B;
         color: #fff;
     } 
  }
 @media screen and (max-width:768px){ 
-        .design_02 {
+        .company {
             margin-top: 70px;
         }
-        .design_02 .design_tit strong {
+        .company .company_tit strong {
             font-size: 15px;            
         }
-        .design_02 .design_tit h2 {
+        .company .company_tit h2 {
             font-size: 25px;
             margin: 5px 0 24px 0;
         }
-        .design_02 .main_photo {
+        .company .main_photo {
             height: 190px;
         }
-        .design_02 .list {
+        .company .list {
             margin-top: 35px;
         }
-        .design_02 .list ul {
+        .v .list ul {
             gap: 5px;
         }
-        .design_02 .list ul li {
+        .company .list ul li {
             width: calc(50% - 8px);
         }
-        .design_02 .list ul li a {
+        .company .list ul li a {
             font-size: 16px;
             padding: 7px 0;
             border-radius: 10px;
         }
-        .design_02 .list ul li span {
+        .company .list ul li span {
             display: none;
         }
-        .design_02 .sub_txt {
+        .company .sub_txt {
             margin: 30px 0 55px 0; 
         }
-        .design_02 .sub_txt p {
+        .company .sub_txt p {
             font-size: 15px;
         }
-        .design_02 .sub_txt strong {
+        .company .sub_txt strong {
             font-size: 16px;
             margin: 8px 0 0 0;
         }
-        .design_02 .photo_list {
+        .company .photo_list {
             margin-bottom: 70px;
         }
-        .design_02 .photo_list ul {
+        .company .photo_list ul {
             display: block;
         }
-        .design_02 .photo_list ul li {
+        .company .photo_list ul li {
             width: 100%;
         }
-        .design_02 .photo_list ul li a .photo {
+        .company .photo_list ul li a .photo {
             height: 220px;
             border-radius: 2px;
         }
-        .design_02 .photo_list ul li a p {
+        .company .photo_list ul li a p {
             left: 15px;
             bottom: 15px;
             font-size: 16px;
         }
 }
-
 
 
 

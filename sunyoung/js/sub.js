@@ -6,13 +6,13 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
-  $('.design .list ul li').on('click', function(){
-		$('.design .list ul li').removeClass('active');
+  $('.house .list ul li').on('click', function(){
+		$('.house .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
-  $('.design_02 .list ul li').on('click', function(){
-		$('.design .list ul li').removeClass('active');
+  $('.company .list ul li').on('click', function(){
+		$('.company .list ul li').removeClass('active');
 		$(this).addClass('active');
 	});
 
