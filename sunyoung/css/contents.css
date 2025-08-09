@@ -404,14 +404,14 @@
 .ctn_performance{
     margin: 140px 0 98px 0;
  }
-.ctn_performance .page_tit h2 {
+.ctn_performance .txt_tit h2 {
     font-size: var(--tit-size);
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);
     color: var(--tit-color);
     margin: 10px 0 39px 0;
  }
-.ctn_performance .perfo_tit  {
+.ctn_performance .sub_tit  {
     background: url(../images/sub/per_bg.jpg) no-repeat center center / cover;
     width: 100%;
     height: 575px;
@@ -420,23 +420,23 @@
     padding: 311px 0 63px 0;
     text-align: center;
 }
-.ctn_performance .perfo_tit strong {
+.ctn_performance .sub_tit strong {
     font-size: 23px;
     font-weight: var(--bold-weight);
     line-height: var(--tit-line-height);    
 }
-.ctn_performance .perfo_tit .list ul {
+.ctn_performance .sub_tit .list ul {
     display: flex;
     justify-content: space-between;
     padding: 0 139px;
 }
-.ctn_performance .perfo_tit .list ul li h3 {
+.ctn_performance .sub_tit .list ul li h3 {
       font-size: 60px;
       font-weight: var(--bold-weight);
       line-height: var(--tit-line-height);
       margin: 55px 0 20px 0;
 }
-.ctn_performance .perfo_tit .list ul li span {
+.ctn_performance .sub_tit .list ul li span {
     font-size: 25px;
 }
 .ctn_performance .perfo_year_group {
@@ -526,35 +526,35 @@
         .ctn_performance{
             margin: 80px 0 90px 0;
         }
-        .ctn_performance .page_tit {
+        .ctn_performance .txt_tit {
             text-align: center;
         }
-        .ctn_performance .page_tit strong {
+        .ctn_performance .txt_tit strong {
             font-size: 16px;
         }
-        .ctn_performance .page_tit h2 {
+        .ctn_performance .txt_tit h2 {
             font-size: 25px;
             margin: 5px 0 20px 0;
         }
-        .ctn_performance .perfo_tit  {
+        .ctn_performance .sub_tit  {
             height: 470px;
             padding: 80px 0 78px 0;
         }
-        .ctn_performance .perfo_tit strong {
+        .ctn_performance .sub_tit strong {
             font-size: 17px;   
         }
-        .ctn_performance .perfo_tit .list ul{
+        .ctn_performance .sub_tit .list ul{
             display: block;
             padding: 0;
         }
-        .ctn_performance .perfo_tit .list ul li h3 {
+        .ctn_performance .sub_tit .list ul li h3 {
             font-size: 35px;
             margin: 24px 0 7px 0;
         }
-        .ctn_performance .perfo_tit .list ul li span {
+        .ctn_performance .sub_tit .list ul li span {
             font-size: 16px;
         }
-        .ctn_performance .perfo_tit .list ul li p {
+        .ctn_performance .sub_tit .list ul li p {
             font-size: 14px;
         }
         .ctn_performance .perfo_year_group {
